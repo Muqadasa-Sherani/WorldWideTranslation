@@ -4,7 +4,7 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-header {
+.nav-bar {
   margin: auto;
   background-color: #116466;
   display: flex;
@@ -59,7 +59,6 @@ a:hover {
     align-items: center;
 }
 
-
 .header-content img{
   width: 80%;
 }
@@ -70,7 +69,7 @@ a:hover {
 }
 .header-content p{
     text-align: justify;
-    margin: 50px 20px ;
+    
     font-size: 20px;
     color: #757575;
 }
@@ -92,7 +91,7 @@ a:hover {
     background-color: #ffffff3f;
     width: 80%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
    
@@ -126,13 +125,14 @@ a:hover {
 .comments-container .comment-area img{
   width: 120px;
   height: 120px;
+  margin: 15px;
   border-radius: 50%;
 }
 .comment-area{
   background-color: #ffffff3f;
   width: 90%;
   margin: auto;
-  margin-top: 20px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-around;
 }
@@ -141,6 +141,7 @@ a:hover {
 }
 .comment h3{
   text-align: right;
+  margin-right: 15px;
 }
 .comment blockquote{
   color: #757575;

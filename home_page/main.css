@@ -1,0 +1,147 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #d1e8e2;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  margin: auto;
+  background-color: #116466;
+  display: flex;
+  justify-content: space-around; /* separate elements horizontally */
+  align-items: center; /* center vertically */
+}
+.logo-and-nav {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+a {
+  color: #e7e7e7;
+  text-decoration: none;
+}
+a:hover {
+  color: #8ea39d;
+}
+
+.header-btn > a {
+  margin: 0 10px;
+}
+
+#login {
+  /*background-color: #ffcb9a;*/
+  background-color: #d9b08c;
+  padding: 15px 35px;
+  border-radius: 2%;
+  color: white;
+}
+
+/* style for header content */
+
+.header-content{
+  background-color: #fad4b262;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-content img{
+  width: 80%;
+}
+.header-content .text h1{  
+    text-align: center;
+    font-size: 40px;
+   
+}
+.header-content p{
+    text-align: justify;
+    margin: 50px 20px ;
+    font-size: 20px;
+    color: #757575;
+}
+
+/* how wwt works */
+
+.introduction-container{
+    background-color: #d9b08c98;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.introduction-container .title{
+    text-align: center;
+    padding: 20px 50px;
+}
+.step{
+    background-color: #ffffff3f;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.step .text{
+    width: 50%;
+}
+.step .text p{
+    color: #757575;
+    text-align: justify;
+}
+.step img{
+  width: 250px;
+  margin-left: 5px;
+}
+
+/* see other's comments */
+
+.comments-container{
+  background-color: #d9b08c98;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.comments-container h1{
+  margin-left: 20px;
+  padding: 20px 20px;
+}
+
+.comments-container .comment-area img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.comment-area{
+  background-color: #ffffff3f;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.comment{
+  width: 80%;
+}
+.comment h3{
+  text-align: right;
+}
+.comment blockquote{
+  color: #757575;
+}

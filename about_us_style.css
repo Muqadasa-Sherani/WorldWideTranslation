@@ -1,0 +1,53 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #d1e8e2;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Container starts*/
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+#image {
+  width: 400px;
+  padding: 20px 40px;
+}
+
+.paragraph-section {
+  padding-right: 50px;
+}
+/*container ends*/
+
+/*input section starts*/
+.input-section {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.email-button {
+  display: flex;
+  justify-content: center; /* separate elements horizontally */
+  align-items: center; /* center vertically */
+}
+
+#send-button {
+  color: white;
+  background-color: #000000;
+  padding: 15px 35px;
+  border-radius: 2%;
+  margin-left: 10px;
+}
+
+#comment-textarea {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+}

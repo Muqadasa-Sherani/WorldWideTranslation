@@ -11,6 +11,7 @@ header {
   margin: auto;
   background-color: #116466;
   display: flex;
+  position: sticky top;
   justify-content: space-between; /* separate elements horizontally */
   align-items: center; /* center vertically */
 }
@@ -55,7 +56,7 @@ footer {
   width: 80%;
   margin: auto;
   background-color: #116466;
-  position: fixed;
+  position: sticky bottom;
   left: 0;
   bottom: 0;
   right: 0;

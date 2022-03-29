@@ -1,0 +1,66 @@
+.profile-section {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#profile-image-id {
+  width: 200px;
+}
+
+.profile-price-box {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #c4e6dd;
+}
+
+.inside-price-box {
+  padding: 50px;
+}
+
+#price-box-button {
+  background-color: #d9b08c;
+  padding: 15px 35px;
+  border-radius: 2%;
+  margin: 20px;
+}
+
+.general-section-style {
+  background-color: #c4e6dd;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px 0px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.customer-profile-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+#customer-pic-id {
+  width: 170px;
+  border-radius: 50%;
+}
+
+.customer-pic {
+  margin: 0px 50px;
+}
+
+.stars {
+  margin: 10px 50px;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}

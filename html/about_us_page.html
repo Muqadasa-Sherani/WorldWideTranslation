@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="navigation_bar.css" />
-    <link rel="stylesheet" href="my_translation_style.css" />
-    <title>My Translations</title>
+    <link rel="stylesheet" href="../css/navigation_bar.css" />
+    <link rel="stylesheet" href="../css/about_us_style.css" />
+    <title>About Us</title>
   </head>
+
   <body>
     <!-- header starts -->
     <header>
@@ -18,7 +19,7 @@
           <ul>
             <li><a href="#">Find Translators</a></li>
             <li><a href="#">Become a Translator</a></li>
-            <li><a href="#">My Translations</a></li>
+            <li><a href="/my_translation_page.html">My Translations</a></li>
           </ul>
         </nav>
       </div>
@@ -30,47 +31,54 @@
     </header>
     <!-- header ends -->
 
-    <!--Container starts-->
+    <!-- container starts -->
     <div class="container">
-      <!--search bar-->
-      <div class="search-container">
-        <input type="text" placeholder="Search.." name="search" />
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </div>
-      <!--completed/new translation files section-->
-      <h1><u>New</u></h1>
-      <div class="new-translation-container">
-        <div class="inside-box-text">
-          <h4>Translation of your file "Ogrenci_belgesi.docx" is completed!</h4>
-          <p>2 hours ago</p>
-        </div>
-        <div class="inside-box-buttons">
-          <a id="download-button" href="#">Download</a>
-          <a id="rate-button" href="#">Rate Translator</a>
-        </div>
-      </div>
+      <!--Paragraph section-->
 
-      <!--Pending translation files section-->
-      <h1><u>Pending</u></h1>
-      <div class="pending-translation-container">
-        <h4>Time remains for your file "pasport_belgesi.docx".</h4>
-        <p>2 days</p>
-        <h4><u>Report a Problem</u></h4>
+      <div class="paragraph-section">
+        <h1>What is ACME?</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          sit amet lorem est. Sed hendrerit turpis felis, tempus pellentesque
+          risus porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at
+          velit tristique, lacinia enim posuere, imperdiet lectus. Ut non
+          tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
+          Pellentesque vehicula eget ipsum vel scelerisque. Maecenas efficitur
+          urna non orci bibendum tempus. Nullam pulvinar massa suscipit tortor
+          euismod dignissim. Donec vel ultrices ligula. Mauris laoreet pulvinar
+          laoreet. Etiam vitae quam at erat tempor faucibus sed vitae risus. Ut
+          vitae faucibus mauris. Donec sit amet maximus ex, a faucibus mi.
+        </p>
       </div>
-      <div class="pending-translation-container">
-        <h4>Time remains for your file "kimlik_belgesi.docx".</h4>
-        <p>3 days</p>
-        <h4><u>Report a Problem</u></h4>
+      <!--picture section-->
+      <div class="picture-section">
+        <img id="image" src="/images/about_us_pic.jpg" alt="about_us" />
       </div>
     </div>
+    <!-- container ends -->
+
+    <!--input-section-->
+    <div class="input-section">
+      <h1>Any questions or concern? Mail us!</h1>
+      <div class="email-button">
+        <label for="email"></label>
+        <textarea name="email" id="email" cols="60" rows="1">
+Enter your Email.</textarea
+        >
+        <input id="send-button" type="submit" value="Send" />
+      </div>
+      <textarea
+        name="comment"
+        id="comment-textarea"
+        cols="80"
+        rows="10"
+      ></textarea>
     </div>
-    
-    <!--Container ends-->
 
     <!-- footer starts -->
     <footer>
       <div class="logo-and-footer">
-        <img class="logo" src="logo.png" alt="" href="/" />
+        <img class="logo" src="/images/logo.png" alt="" href="/" />
 
         <!--Categories section-->
         <div class="categories">
@@ -86,7 +94,7 @@
         <div class="contact">
           <ul>
             <li><h5>CONTACT</h5></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="/about_us_page.html">About Us</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Help</a></li>
           </ul>

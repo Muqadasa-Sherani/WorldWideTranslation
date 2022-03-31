@@ -48,8 +48,8 @@ h3 {
   justify-content: space-between;
   margin: 50px;
 }
-
-#customer-pic-id {
+/* no id duplicate!*/
+.customer-pic-id {
   width: 170px;
   border-radius: 50%;
 }

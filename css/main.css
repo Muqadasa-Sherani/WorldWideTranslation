@@ -1,0 +1,139 @@
+/* style for header content */
+
+.header-content{
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content img{
+  width: 85%;
+}
+.header-content .text h1{  
+  text-align: center;
+  font-size: 50px;
+}
+.header-content .text h1 span{
+  color: #116466;
+}
+.header-content .text p{
+  width: 90%;
+  margin: auto;
+  text-align: justify; /* ? */
+  font-size: 20px;
+  color: #757575;
+}
+.header-content .text a{
+  background-color: rgb(253, 174, 109);
+  color: white;
+  display: block;
+  width: 130px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px #ff7b00;
+}
+
+
+/* introduction section: how wwt works */
+
+.introduction-container{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+/* how wwt works? & 100% safety guaranteed */
+.introduction-container h1{
+  text-align: center;
+  padding: 50px 50px;
+}
+.step{
+  background-color: #ffffff52;
+  border: 1px solid #1e92943b;
+  box-shadow: 5px 5px 5px #116566be;
+  border-radius: 10px;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step .text{
+    width: 50%;
+}
+.step .text p{
+    color: #757575;
+    text-align: justify;
+}
+.step-img{
+  width: calc(100px + 10%);
+  height: calc(100px + 10%);
+  margin-left: 5%;
+}
+
+#complete{
+  width: calc(95px + 5%);
+  padding: 5% 2% 5% 3%; /* image does not have padding initially so give some padding */
+}
+
+.introduction-container h1 > img{
+  width:45px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* see other's comments */
+
+.comments-container{
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.comments-container h1{
+  margin-left: 10px;
+  padding: 20px 20px;
+}
+
+.comments-container .comment-area img{
+  width: 120px;
+  height: 120px;
+  margin: 15px;
+  border-radius: 50%;
+}
+.comment-area{
+  background-color: #ffffff4b;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.comment{
+  width: 80%;
+}
+.comment h3{
+  text-align: right;
+  margin-right: 15px;
+}
+.comment blockquote{
+  color: #757575;
+}
+
+.comments-container h1 a{
+  font-size: inherit; /* h1 size */
+  color: #116466;
+}
+
+.comments-container h1 a:hover{
+  color: #f7902f;
+}

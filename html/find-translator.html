@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Translator</title>
+    <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
+    <link rel="stylesheet" href="../css/navigation_bar.css">
+    <link rel="stylesheet" href="../css/find-translator.css">
+    <!--font style import-->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap");
+    </style>
+    <!--icons, font awesome kit-->
+    <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-bar">
+            <div class="logo-and-nav">
+                <a href="../index.html">
+                    <img class="logo" src="/images/wwt_logo_circle.png" alt="" />
+                </a>
+                <a class="logo-text" href="../index.html">
+                    <span class="logo-title">WWT</span> <br>
+                    <span class="logo-text">WORLD WIDE TRANSLATIONS</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="find-translator.html">Find Translators</a></li>
+                        <li><a href="#">Become a Translator</a></li>
+                        <li><a href="my_translation_page.html">My Translations</a></li>
+                        <li><a href="about_us_page.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-btn">
+                <a id="signup" href="#">Sign Up</a>
+                <a id="login" href="#">Login</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="select-area">
+            <h3>Select the language you want to find a translator.</h3>
+
+            <!-- action & method -->
+            <form>
+                <select class="select-lang">
+                    <option value="">English</option>
+                    <option value="">Turkish</option>
+                    <option value="">Korean</option>
+                </select>
+
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <select class="select-lang">
+                    <option value="">Turkish</option>
+                    <option value="">English</option>
+                    <option value="">Korean</option>
+                </select>
+
+
+
+                <select name="filter">
+                    <option value="price-asc">Price (Ascending)</option>
+                    <option value="rating">Rating</option>
+                </select>
+
+                <input id="search-btn" type="submit" value="Search">
+            </form>
+
+        </div>
+        <div class="result-area">
+            <p>3 translators were found for your search.</p>
+            <div class="profile">
+                <div class="profile-content">
+                    <div class="img-rating">
+                        <img src="../images/translators/user4.jpg" alt="user2">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="profile-text">
+                        <h3>Name Surname</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque
+                            molestias!
+                            Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto
+                            sed
+                            suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="side-content">
+                    <div>
+                        <p>Price per words: <span>0.50</span>$</p>
+                        <p>Time: 2 days</p>
+                    </div>
+                    <a class="view-profile" href="translators_profile_page.html">View Profile</a>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="profile-content">
+                    <div class="img-rating">
+                        <img src="../images/translators/user10.jpg" alt="user2">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="profile-text">
+                        <h3>Name Surname</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque
+                            molestias!
+                            Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto
+                            sed
+                            suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="side-content">
+                    <div>
+                        <p>Price per words: <span>0.50</span>$</p>
+                        <p>Time: 2 days</p>
+                    </div>
+                    <a class="view-profile" href="translators_profile_page.html">View Profile</a>
+                    <!-- <input class="view-profile" type="submit" value="View Profile"> -->
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="profile-content">
+                    <div class="img-rating">
+                        <img src="../images/translators/user8.jpg" alt="user2">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="profile-text">
+                        <h3>Name Surname</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque
+                            molestias!
+                            Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto
+                            sed
+                            suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="side-content">
+                    <div>
+                        <p>Price per words: <span>0.50</span>$</p>
+                        <p>Time: 2 days</p>
+                    </div>
+                    <a class="view-profile" href="translators_profile_page.html">View Profile</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer starts -->
+    <footer>
+        <div class="logo-and-footer">
+            <img src="/images/wwt_logo.png" alt="" />
+
+            <!--Categories section-->
+            <div class="footer-links">
+                <ul>
+                    <li>
+                        <h5>CATEGORIES</h5>
+                    </li>
+                    <li><a href="find-translator.html">Find Translators</a></li>
+                    <li><a href="#">Become a Translator</a></li>
+                    <li><a href="../index.html">Features</a></li>
+                </ul>
+            </div>
+
+            <!--Contact section-->
+            <div class="footer-links">
+
+                <ul>
+                    <li>
+                        <h5>CONTACT</h5>
+                    </li>
+                    <li><a href="about_us_page.html">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+
+            <!--Follow Us section-->
+            <div class="follow-us">
+                <h5>FOLLOW US</h5>
+                <a href="/"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
+                <a href="/"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+                <a href="/"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends -->
+</body>
+
+</html>

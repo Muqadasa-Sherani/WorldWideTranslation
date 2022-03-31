@@ -71,3 +71,7 @@
   margin: 80px;
   padding: 5px;
 }
+/* only for this page */
+.inside-box-buttons > a{
+  color: white;
+}

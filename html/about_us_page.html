@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/navigation_bar.css" />
-    <link rel="stylesheet" href="../css/about_us_style.css" />
-    <title>About Us</title>
-  </head>
 
-  <body>
-    <!-- header starts -->
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
+  <link rel="stylesheet" href="../css/navigation_bar.css" />
+  <link rel="stylesheet" href="../css/about_us_style.css" />
+  <!--font style import-->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap");
+  </style>
+  <!--icons, font awesome kit-->
+  <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- header starts -->
+  <header>
+    <div class="nav-bar">
       <div class="logo-and-nav">
-        <img class="logo" src="logo.png" alt="" href="/" />
-
+        <a href="../index.html">
+          <img class="logo" src="/images/wwt_logo_circle.png" alt="" />
+        </a>
+        <a class="logo-text" href="../index.html">
+          <span class="logo-title">WWT</span> <br>
+          <span class="logo-text">WORLD WIDE TRANSLATIONS</span>
+        </a>
         <nav>
           <ul>
-            <li><a href="#">Find Translators</a></li>
+            <li><a href="find-translator.html">Find Translators</a></li>
             <li><a href="#">Become a Translator</a></li>
-            <li><a href="/my_translation_page.html">My Translations</a></li>
+            <li><a href="my_translation_page.html">My Translations</a></li>
+            <li><a href="about_us_page.html">About Us</a></li>
           </ul>
         </nav>
       </div>
@@ -28,97 +44,91 @@
         <a id="signup" href="#">Sign Up</a>
         <a id="login" href="#">Login</a>
       </div>
-    </header>
-    <!-- header ends -->
-
-    <!-- container starts -->
-    <div class="container">
-      <!--Paragraph section-->
-
-      <div class="paragraph-section">
-        <h1>What is ACME?</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          sit amet lorem est. Sed hendrerit turpis felis, tempus pellentesque
-          risus porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at
-          velit tristique, lacinia enim posuere, imperdiet lectus. Ut non
-          tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
-          Pellentesque vehicula eget ipsum vel scelerisque. Maecenas efficitur
-          urna non orci bibendum tempus. Nullam pulvinar massa suscipit tortor
-          euismod dignissim. Donec vel ultrices ligula. Mauris laoreet pulvinar
-          laoreet. Etiam vitae quam at erat tempor faucibus sed vitae risus. Ut
-          vitae faucibus mauris. Donec sit amet maximus ex, a faucibus mi.
-        </p>
-      </div>
-      <!--picture section-->
-      <div class="picture-section">
-        <img id="image" src="/images/about_us_pic.jpg" alt="about_us" />
-      </div>
-    </div>
-    <!-- container ends -->
-
-    <!--input-section-->
-    <div class="input-section">
-      <h1>Any questions or concern? Mail us!</h1>
-      <div class="email-button">
-        <label for="email"></label>
-        <textarea name="email" id="email" cols="60" rows="1">
-Enter your Email.</textarea
-        >
-        <input id="send-button" type="submit" value="Send" />
-      </div>
-      <textarea
-        name="comment"
-        id="comment-textarea"
-        cols="80"
-        rows="10"
-      ></textarea>
     </div>
 
-    <!-- footer starts -->
-    <footer>
-      <div class="logo-and-footer">
-        <img class="logo" src="/images/logo.png" alt="" href="/" />
+  </header>
+  <!-- header ends -->
 
-        <!--Categories section-->
-        <div class="categories">
-          <ul>
-            <li><h5>CATEGORIES</h5></li>
-            <li><a href="#">Find Translators</a></li>
-            <li><a href="#">Become a Translator</a></li>
-            <li><a href="#">Features</a></li>
-          </ul>
-        </div>
+  <!-- container starts -->
+  <div class="container">
+    <!--Paragraph section-->
 
-        <!--Contact section-->
-        <div class="contact">
-          <ul>
-            <li><h5>CONTACT</h5></li>
-            <li><a href="/about_us_page.html">About Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </div>
+    <div class="paragraph-section">
+      <h1>What is ACME?</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        sit amet lorem est. Sed hendrerit turpis felis, tempus pellentesque
+        risus porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at
+        velit tristique, lacinia enim posuere, imperdiet lectus. Ut non
+        tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
+        Pellentesque vehicula eget ipsum vel scelerisque. Maecenas efficitur
+        urna non orci bibendum tempus. Nullam pulvinar massa suscipit tortor
+        euismod dignissim. Donec vel ultrices ligula. Mauris laoreet pulvinar
+        laoreet. Etiam vitae quam at erat tempor faucibus sed vitae risus. Ut
+        vitae faucibus mauris. Donec sit amet maximus ex, a faucibus mi.
+      </p>
+    </div>
+    <!--picture section-->
+    <div class="picture-section">
+      <img id="image" src="/images/about_us_pic.jpg" alt="about_us" />
+    </div>
+  </div>
+  <!-- container ends -->
 
-        <!--Follow Us section-->
-        <div class="follow-us">
-          <h5>FOLLOW US</h5>
-          <a href="/"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
-          <a href="/"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
-          <a href="/"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
-        </div>
+  <!--input-section-->
+  <div class="input-section">
+    <h1>Any questions or concern? Mail us!</h1>
+    <div class="email-button">
+      <label for="email"></label>
+      <textarea name="email" id="email" cols="60" rows="1">
+Enter your Email.</textarea>
+      <input id="send-button" type="submit" value="Send" />
+    </div>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10"></textarea>
+  </div>
+
+  <!-- footer starts -->
+  <footer>
+    <div class="logo-and-footer">
+      <img src="/images/wwt_logo.png" alt="" />
+
+      <!--Categories section-->
+      <div class="footer-links">
+        <ul>
+          <li>
+            <h5>CATEGORIES</h5>
+          </li>
+          <li><a href="find-translator.html">Find Translators</a></li>
+          <li><a href="#">Become a Translator</a></li>
+          <li><a href="../index.html">Features</a></li>
+        </ul>
       </div>
-    </footer>
-    <!-- footer ends -->
 
-    <!--icons, font awesome kit-->
-    <script
-      src="https://kit.fontawesome.com/4d9873f214.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--font style import-->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap");
-    </style>
-  </body>
+      <!--Contact section-->
+      <div class="footer-links">
+
+        <ul>
+          <li>
+            <h5>CONTACT</h5>
+          </li>
+          <li><a href="about_us_page.html">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+
+      <!--Follow Us section-->
+      <div class="follow-us">
+        <h5>FOLLOW US</h5>
+        <a href="/"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
+        <a href="/"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+        <a href="/"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends -->
+
+
+</body>
+
 </html>

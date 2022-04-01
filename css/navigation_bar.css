@@ -66,6 +66,13 @@ nav a:hover, #signup:hover{
   
 }
 
+nav a:focus-visible{
+  color: #116466; /*#8ea39d; */
+  padding-bottom: 18px;
+  border-bottom: 4px solid #116466;
+  
+}
+
 .header-btn > a {
   margin: 0 10px;
 }
@@ -76,6 +83,11 @@ nav a:hover, #signup:hover{
   color: white;
   padding: 12px 30px;
   border-radius: 2px;
+}
+
+#login:hover {
+  background-color: #8fafaf;
+  
 }
 
 /*   FOOTER START   */

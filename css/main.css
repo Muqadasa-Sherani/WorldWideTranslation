@@ -44,9 +44,6 @@
 
 
 /* introduction section: how wwt works */
-
-
-
 .introduction-container{
   width: 90%;
   margin: auto;
@@ -71,11 +68,11 @@
   align-items: center;
 }
 .step .text{
-    width: 50%;
+  width: 50%;
 }
 .step .text p{
-    color: #525252;
-    text-align: justify;
+  color: #525252;
+  text-align: justify;
 }
 .step-img{
   width: calc(100px + 10%);
@@ -85,7 +82,11 @@
 
 #complete{
   width: calc(95px + 5%);
-  padding: 5% 2% 5% 3%; /* image does not have padding initially so give some padding */
+  padding: 5% 2% 5% 2%; /* image does not have padding initially so give some padding */
+}
+#find-translator{
+  width: calc(115px + 10%);
+  height: calc(115px + 10%);;
 }
 
 .introduction-container h1 > img{

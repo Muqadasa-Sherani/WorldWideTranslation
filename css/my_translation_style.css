@@ -1,3 +1,8 @@
+.profile-info img{
+  width: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
 .container {
   width: 80%;
   margin: auto;
@@ -14,9 +19,9 @@
 
 .search-container button {
   float: right;
+  border-radius: 5px;
   padding: 6px 10px;
-  margin-right: 16px;
-  background: #ddd;
+  background: #e2e2e2;
   font-size: 17px;
   border: none;
   cursor: pointer;
@@ -31,7 +36,7 @@
 }
 
 .new-translation-container {
-  background-color: #ffffff65;
+  background-color: #d1e8e2;
   border-radius: 10px;
   margin-bottom: 40px;
   padding: 5px;
@@ -45,7 +50,7 @@
 
 .inside-box-text > p {
   font-size: medium;
-  color: rgb(150, 146, 146);
+  color: #969292;
   margin-right: 50px;
 }
 
@@ -58,22 +63,22 @@
 }
 
 #download-button {
-  background-color: #d9b08c;
+  background-color: #116466;
   padding: 15px 35px;
-  border-radius: 2%;
+  border-radius: 5px;
 }
 
 #rate-button {
-  background-color: #d9b08c;
-  padding: 15px 35px;
-  border-radius: 2%;
+  background-color: #116466;
+  padding: 15px 25px;
+  border-radius: 5px;
   margin-left: 20px;
 }
 
 .pending-translation-container {
   display: flex;
   justify-content: space-between;
-  background-color: #ffffff65;
+  background-color: #ffd9bb;
   border-radius: 10px;
   padding: 5px 17px;
   margin-bottom: 40px;

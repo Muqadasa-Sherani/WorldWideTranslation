@@ -1,8 +1,10 @@
 /* style for header content */
-
+.muq{
+  background-color: #d1e8e2;
+}
 .header-content{
   width: 80%;
-  height: 90vh;
+  height: 100vh;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -43,6 +45,8 @@
 
 /* introduction section: how wwt works */
 
+
+
 .introduction-container{
   width: 90%;
   margin: auto;
@@ -52,11 +56,12 @@
 .introduction-container h1{
   text-align: center;
   padding: 50px 50px;
+  margin: 0;
 }
 .step{
-  background-color: #ffffff52;
-  border: 1px solid #1e92943b;
-  box-shadow: 5px 5px 5px #116566be;
+  background-color: #d1e8e2;
+  border: 1px solid #d1e8e2;
+  box-shadow: 4px 4px 2px #116466;
   border-radius: 10px;
   width: 75%;
   margin: auto;
@@ -69,7 +74,7 @@
     width: 50%;
 }
 .step .text p{
-    color: #757575;
+    color: #525252;
     text-align: justify;
 }
 .step-img{
@@ -110,7 +115,8 @@
   border-radius: 50%;
 }
 .comment-area{
-  background-color: #ffffff4b;
+  background-color: white;
+  box-shadow: 4px 4px 2px #7e7e7e;
   border-radius: 10px;
   width: 90%;
   margin: auto;
@@ -131,9 +137,9 @@
 
 .comments-container h1 a{
   font-size: inherit; /* h1 size */
-  color: #116466;
+  color: #f7902f;
 }
 
 .comments-container h1 a:hover{
-  color: #f7902f;
+  color: #116466;
 }

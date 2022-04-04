@@ -1,6 +1,6 @@
 body {
   font-family: "Josefin Sans", sans-serif;
-  background-color: #d1e8e2;
+  background-color: #efefef;
   margin: 0;
   box-sizing: border-box;
 }
@@ -79,7 +79,7 @@ nav a:focus-visible{
 
 #login {
   /*background-color: #ffcb9a; d9b08c*/
-  background-color: #116466;
+  background-color: #ff9736;
   color: white;
   padding: 12px 30px;
   border-radius: 2px;

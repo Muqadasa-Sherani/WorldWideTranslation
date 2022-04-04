@@ -9,10 +9,11 @@ body {
 .container {
   display: flex;
   width: 80%;
+  height: 100vh;
   margin: auto;
   margin-top: 80px;
 }
-
+/* RESPONSIVE */
 #image {
   width: 400px;
   padding: 20px 40px;
@@ -44,15 +45,17 @@ span{
 }
 
 #email{
+  padding: 5px 5px;
   width: 100%;
+  outline: none;
 }
 
 #send-button {
   color: white;
-  background-color: #d9b08c;
+  background-color: #ffa352;
   font-size: 17px;
   padding:6px 25px; /*15px 35px;*/
-  border-radius: 2%;
+  border-radius: 5px;
   margin-left: 10px;
   border: none;
   cursor: pointer;
@@ -63,4 +66,5 @@ span{
   width: 50%;
   margin: auto;
   margin-top: 10px;
+  outline: none;
 }

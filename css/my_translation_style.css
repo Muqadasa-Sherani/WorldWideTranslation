@@ -9,7 +9,7 @@
 
 .search-container {
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 
 .search-container button {
@@ -22,13 +22,18 @@
   cursor: pointer;
 }
 
+.fa{
+  color:#116466;
+}
+
 .search-container button:hover {
   background: #ccc;
 }
 
 .new-translation-container {
-  background-color: #c4e6dd;
-  margin: 80px;
+  background-color: #ffffff65;
+  border-radius: 10px;
+  margin-bottom: 40px;
   padding: 5px;
 }
 
@@ -47,6 +52,7 @@
 .inside-box-buttons {
   display: flex;
   justify-content: right;
+  align-items: center;
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -67,9 +73,11 @@
 .pending-translation-container {
   display: flex;
   justify-content: space-between;
-  background-color: #c4e6dd;
-  margin: 80px;
-  padding: 5px;
+  background-color: #ffffff65;
+  border-radius: 10px;
+  padding: 5px 17px;
+  margin-bottom: 40px;
+  
 }
 /* only for this page */
 .inside-box-buttons > a{

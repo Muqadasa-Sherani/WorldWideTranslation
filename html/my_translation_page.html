@@ -1,134 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Translations</title>
+    <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
+    <link rel="stylesheet" href="../css/navigation_bar.css" />
+    <link rel="stylesheet" href="../css/my_translation_style.css" />
+    <!--font style import-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap");
+    </style>
+    <!--icons, font awesome kit-->
+    <script
+      src="https://kit.fontawesome.com/f18ebfae9b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Translations</title>
-  <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
-  <link rel="stylesheet" href="../css/navigation_bar.css" />
-  <link rel="stylesheet" href="../css/my_translation_style.css" />
-  <!--font style import-->
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap");
-  </style>
-  <!--icons, font awesome kit-->
-  <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-  <!-- before accessing my translations page the user must log in or sign up 
+  <body>
+    <!-- before accessing my translations page the user must log in or sign up 
       so there is no need to display login-signup buttons in navbar 
   -->
-  <!-- header starts -->
-  <header>
-    <div class="nav-bar">
-      <div class="logo-and-nav">
-        <a href="../index.html">
-          <img class="logo" src="/images/wwt_logo_circle.png" alt="" />
-        </a>
-        <a class="logo-text" href="../index.html">
-          <span class="logo-title">WWT</span> <br>
-          <span class="logo-text">WORLD WIDE TRANSLATIONS</span>
-        </a>
-        <nav>
+    <!-- header starts -->
+    <header>
+      <div class="nav-bar">
+        <div class="logo-and-nav">
+          <a href="../index.html">
+            <img class="logo" src="/images/wwt_logo_circle.png" alt="" />
+          </a>
+          <a class="logo-text" href="../index.html">
+            <span class="logo-title">WWT</span> <br />
+            <span class="logo-text">WORLD WIDE TRANSLATIONS</span>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="find-translator.html">Find Translators</a></li>
+              <li><a href="#">Become a Translator</a></li>
+              <li><a href="my_translation_page.html">My Translations</a></li>
+              <li><a href="about_us_page.html">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header-btn">
+          <a id="signup" href="#">Sign Up</a>
+          <a id="login" href="#">Login</a>
+        </div>
+      </div>
+    </header>
+    <!-- header ends -->
+
+    <!--Container starts-->
+    <div class="container">
+      <!--search bar-->
+      <div class="search-container">
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <!--completed/new translation files section-->
+      <h1><u>New</u></h1>
+      <div class="new-translation-container">
+        <div class="inside-box-text">
+          <h4>Translation of your file "Ogrenci_belgesi.docx" is completed!</h4>
+          <p>2 hours ago</p>
+        </div>
+        <div class="inside-box-buttons">
+          <a id="download-button" href="#">Download</a>
+          <a id="rate-button" href="/html/translators_profile_page.html"
+            >Rate Translator</a
+          >
+        </div>
+      </div>
+
+      <!--Pending translation files section-->
+      <h1><u>Pending</u></h1>
+      <div class="pending-translation-container">
+        <h4>Time remains for your file "pasport_belgesi.docx".</h4>
+        <p>2 days</p>
+        <h4><u>Report a Problem</u></h4>
+      </div>
+      <div class="pending-translation-container">
+        <h4>Time remains for your file "kimlik_belgesi.docx".</h4>
+        <p>3 days</p>
+        <h4><u>Report a Problem</u></h4>
+      </div>
+    </div>
+
+    <!--Container ends-->
+
+    <!-- footer starts -->
+    <footer>
+      <div class="logo-and-footer">
+        <img src="../images/wwt_logo.png" alt="" />
+
+        <!--Categories section-->
+        <div class="footer-links">
           <ul>
-            <li><a href="find-translator.html">Find Translators</a></li>
+            <li>
+              <h5>CATEGORIES</h5>
+            </li>
+            <li><a href="/find-translator.html">Find Translators</a></li>
             <li><a href="#">Become a Translator</a></li>
-            <li><a href="my_translation_page.html">My Translations</a></li>
-            <li><a href="about_us_page.html">About Us</a></li>
+            <li><a href="../index.html">Features</a></li>
           </ul>
-        </nav>
+        </div>
+
+        <!--Contact section-->
+        <div class="footer-links">
+          <ul>
+            <li>
+              <h5>CONTACT</h5>
+            </li>
+            <li><a href="/about_us_page.html">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+
+        <!--Follow Us section-->
+        <div class="follow-us">
+          <h5>FOLLOW US</h5>
+          <a href="/"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
+          <a href="/"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+          <a href="/"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
+        </div>
       </div>
-
-      <div class="header-btn">
-        <a id="signup" href="#">Sign Up</a>
-        <a id="login" href="#">Login</a>
-      </div>
-    </div>
-
-  </header>
-  <!-- header ends -->
-
-  <!--Container starts-->
-  <div class="container">
-    <!--search bar-->
-    <div class="search-container">
-      <input type="text" placeholder="Search.." name="search" />
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </div>
-    <!--completed/new translation files section-->
-    <h1><u>New</u></h1>
-    <div class="new-translation-container">
-      <div class="inside-box-text">
-        <h4>Translation of your file "Ogrenci_belgesi.docx" is completed!</h4>
-        <p>2 hours ago</p>
-      </div>
-      <div class="inside-box-buttons">
-        <a id="download-button" href="#">Download</a>
-        <a id="rate-button" href="/html/translators_profile_page.html">Rate Translator</a>
-      </div>
-    </div>
-
-    <!--Pending translation files section-->
-    <h1><u>Pending</u></h1>
-    <div class="pending-translation-container">
-      <h4>Time remains for your file "pasport_belgesi.docx".</h4>
-      <p>2 days</p>
-      <h4><u>Report a Problem</u></h4>
-    </div>
-    <div class="pending-translation-container">
-      <h4>Time remains for your file "kimlik_belgesi.docx".</h4>
-      <p>3 days</p>
-      <h4><u>Report a Problem</u></h4>
-    </div>
-  </div>
-
-  <!--Container ends-->
-
-  <!-- footer starts -->
-  <footer>
-    <div class="logo-and-footer">
-      <img src="/images/wwt_logo.png" alt="" />
-
-      <!--Categories section-->
-      <div class="footer-links">
-        <ul>
-          <li>
-            <h5>CATEGORIES</h5>
-          </li>
-          <li><a href="find-translator.html">Find Translators</a></li>
-          <li><a href="#">Become a Translator</a></li>
-          <li><a href="../index.html">Features</a></li>
-        </ul>
-      </div>
-
-      <!--Contact section-->
-      <div class="footer-links">
-
-        <ul>
-          <li>
-            <h5>CONTACT</h5>
-          </li>
-          <li><a href="about_us_page.html">About Us</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </div>
-
-      <!--Follow Us section-->
-      <div class="follow-us">
-        <h5>FOLLOW US</h5>
-        <a href="/"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
-        <a href="/"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
-        <a href="/"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
-      </div>
-    </div>
-  </footer>
-  <!-- footer ends -->
-
-</body>
-
+    </footer>
+    <!-- footer ends -->
+  </body>
 </html>

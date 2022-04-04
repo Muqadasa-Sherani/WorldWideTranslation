@@ -82,11 +82,11 @@ nav a:focus-visible{
   background-color: #ff9736;
   color: white;
   padding: 12px 30px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 #login:hover {
-  background-color: #8fafaf;
+  background-color: #116466;
   
 }
 

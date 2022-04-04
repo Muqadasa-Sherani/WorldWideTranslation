@@ -1,5 +1,5 @@
 /* style for header content */
-.muq{
+.header-container{
   background-color: #d1e8e2;
 }
 .header-content{
@@ -118,7 +118,7 @@
   background-color: white;
   box-shadow: 4px 4px 2px #7e7e7e;
   border-radius: 10px;
-  width: 90%;
+  width: 85%;
   margin: auto;
   margin-bottom: 25px;
   display: flex;

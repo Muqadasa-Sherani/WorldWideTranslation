@@ -1,88 +1,88 @@
+/* container includes all items in this page*/
 .container{
     width: 90%;
-    margin: auto;
+    margin: auto; /* center horizontally */
     margin-bottom: 50px;
 }
 .container > p{
     font-size: 14px;
     color: #444444;
 }
+/* select area includes select-options and "search" button */
 .select-area{
     width: 80%;
-    margin: auto;
+    margin: auto; /* center horizontally */
     margin-top: 40px;
 }
 
 select{
     padding: 8px 10px;
     border: none;
-    outline: none;
+    outline: none; /* removes the outline (black border) when element is clicked */
 }
-
 #search-btn{
     border: none;
     border-radius: 3px;
     padding: 8px 20px;
     background-color: #116466;
     color: white;
-
+    cursor: pointer;
 }
 
 .result-area{
     width: 80%;
-    margin: auto;
+    margin: auto; /* center horizontally */
     margin-top: 50px;
     margin-bottom: 100px;
 }
 .result-area p{
     margin: 50px 0;
 }
+/* profile class has 2 divs: profile-content (information about translator) and side-content (price - time) */
 .profile{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    display: flex; /* display divs side by side */
+    justify-content: space-between; /* seperate divs in flex direction (x axis) */
+    align-items: center; /* center divs vertically */
     background-color: #d1e8e2;
     border-radius: 10px;
-
     margin-bottom: 40px;
 }
+
+/* profile-content class has 2 divs: img-ratings (translator's profile picture with his/her rating) and profile-info */
 .profile-content{
-    width: 80%; /* ??? */
-    display: flex;
-    align-items: center;
-    
+    width: 80%;
+    display: flex; /* display divs side by side */
+    align-items: center; /* center divs vertically */
 }
+/* img-rating class consist of profile picture of translator and his/her rating */
 .img-rating{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(100px + 10%);
+    display: flex; /* display divs in flex direction (default flex direction is row, so it displays side by side) */
+    flex-direction: column; /* change flex direction to column (y axis)*/
+    justify-content: space-between; /* seperate items vertically (in flex direction: y axis) */
+    align-items: center; /* center items horizontally */
+    width: calc(100px + 10%); /* calc function help us to calculate different kinds of values */
 }
 .img-rating img{
     width: 100px;
-    border-radius: 50%;
+    border-radius: 50%; /* make profile picture circular */
     margin-bottom: 15px;
 }
-/* name surname - info */
-.profile-text{
+/* style translator's profile information*/
+.profile-info{
     width: 70%;
     margin-right: 5%;
     text-align: justify;
     padding: 20px 0;
 }
 .side-content{
+    display: flex; /* display divs in flex direction */
+    flex-direction: column; /* change flex direction to column (y axis) */
+    align-items: center; /* center items horizontally */
+    text-align: center;
     margin-right: 20px;
     border: 2px solid #b8dcd3;
     border-radius: 5px;
     width: 20%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 .side-info{
     font-size: 18px;
@@ -92,9 +92,8 @@ select{
     border: none;
     border-radius: 3px;
     background-color: #ffa958;
+    color: white;
     padding: 8px 8px;
     margin-bottom: 10px;
-    color: white;
     cursor: pointer;
-
 }

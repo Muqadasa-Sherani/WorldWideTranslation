@@ -1,40 +1,52 @@
+/* COMMON STYLES */
+
 body {
   font-family: "Josefin Sans", sans-serif;
   background-color: #efefef;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* be careful: all li, ul, a will inherit this style */
+/* all <li>, <ul>, <a> elements will have these styles 
+initially because this file is imported from all pages */
+
 ul{
   padding-inline-start: 0px;
 }
 
 li {
   list-style: none;
-  margin: 0 12px;
 }
 
 a {
   text-decoration: none;
 }
 
-/* style navigation */
+/* STYLE HEADER (NAVIGATION) */
 
+/* nav-bar class includes 2 divs: logo-and-nav + navbar-buttons */
 .nav-bar {
-  margin: auto;
-  padding: 5px 10px;
+  display: flex; /* display divs side by side */
+  justify-content: space-between; /* separate items in flex direction (flex direction is row (x axis) intially) */
+  align-items: center; /* center items vertically (cross axis: y) */
+  padding: 5px 20px;
   background-color: white;
-  display: flex;
-  justify-content: space-between; /* separate elements horizontally */
-  align-items: center; /* center vertically */
 }
+/* logo-and-nav class includes 2 divs: logo + nav */
 .logo-and-nav {
+  display: flex; /* display divs side by side */
+  justify-content: space-between; 
+  align-items: center; /* center items vertically */
+}
+/* style logo */
+.logo{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
 }
-.logo-and-nav img{
+.logo img{
   width: 45px;
   margin: 0 5px;
 }
@@ -42,55 +54,53 @@ a {
   text-align: center;
   color: #116466;
   margin-right: 5px;
- 
+  font-size: 8px;
 }
 .logo-title{
   font-size: 18px;
   font-weight: bold;
 }
-.logo-text{
-  font-size: 8px;
-}
+/* style navigation */
 nav ul{
-  display: flex;
+  display: flex; /* display <li> elements side by side */
 }
+nav ul li{
+  margin: 0 12px;
+}
+/* style both nav-links and signup link */
 nav a, #signup{
   font-size: 14px;
   color: #383838;
 }
-
-nav a:hover, #signup:hover{
-  color: #116466; /*#8ea39d; */
+nav a:hover{
+  color: #116466;
   padding-bottom: 18px;
   border-bottom: 4px solid #116466;
-  
 }
-
-nav a:focus-visible{
-  color: #116466; /*#8ea39d; */
-  padding-bottom: 18px;
-  border-bottom: 4px solid #116466;
-  
+.navbar-buttons{
+  display: flex;
+  align-items: center;
 }
-
-.header-btn > a {
+#signup {
+  padding: 12px 20px;
   margin: 0 10px;
+}
+#signup:hover{
+  color: #116466;
 }
 
 #login {
-  /*background-color: #ffcb9a; d9b08c*/
   background-color: #ff9736;
   color: white;
-  padding: 12px 30px;
+  padding: 12px 25px;
   border-radius: 3px;
 }
 
 #login:hover {
   background-color: #116466;
-  
 }
 
-/*   FOOTER START   */
+/* STYLE FOOTER */
 footer {
   width: 100%;
   margin: auto;
@@ -101,22 +111,28 @@ footer {
 .logo-and-footer {
   padding: 20px 0;
   display: flex;
-  justify-content: space-around; /* separate elements horizontally */
+  justify-content: space-evenly; /* separate elements horizontally */
   align-items: center; /* center vertically */
 }
 .logo-and-footer img{
-  width: 200px;
+  width: 180px;
+  margin-bottom: 15px;
+}
+.footer-logo {
+  font-size: 14px;
+}
+.members a{
+  color: white;
+  margin-left: 6px;
 }
 .logo-and-footer li{
   margin-bottom: 10px;
 }
 .footer-links a{
-  color: rgb(216, 208, 208);
+  color: #efefef;
   text-decoration: underline;
 }
-
 .follow-us {
-  /*padding: 20px;*/
   margin-bottom: 50px;
 }
 
@@ -124,5 +140,3 @@ footer {
   color: white;
   margin-right: 10px;
 }
-
-/*  FOOTER FINISH  */

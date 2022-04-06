@@ -6,34 +6,56 @@ body {
 }
 
 /*Container starts*/
-.container {
-  display: flex;
+.container{
   width: 80%;
   height: 100vh;
   margin: auto;
+}
+
+.box1 {
+  display: flex;
   margin-top: 80px;
 }
 /* RESPONSIVE */
-#image {
-  width: 400px;
+#image_box1 {
+  width: 350px;
   padding: 20px 40px;
 }
 
-.paragraph-section {
+.paragraph-box1 {
   padding-right: 50px;
+  text-align: justify;
 }
 
 span{
   color: #116466;
 }
+
+.box2{
+  display: flex;
+  margin-top: 50px;
+}
+
+#image_box2{
+  width: 350px;
+}
+
+.paragraph-box2{
+  padding-left: 50px;
+  text-align: justify;
+}
+
 /*container ends*/
 
 /*input section starts*/
 .input-section {
   width: 80%;
   margin: auto;
-  margin-top: 10px;
   margin-bottom: 60px;
+}
+
+.text-box-title{
+  text-align: center;
 }
 
 .email-button {
@@ -61,7 +83,7 @@ span{
   cursor: pointer;
 }
 
-#comment-textarea {
+.text-area {
   display: flex;
   width: 50%;
   margin: auto;

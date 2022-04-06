@@ -20,15 +20,16 @@
     <header>
         <div class="nav-bar">
             <div class="logo-and-nav">
-                <!-- logo -->
-                <a href="../index.html">
-                    <img class="logo" src="../images/wwt_logo_circle.png" alt="wwt-logo" />
-                </a>
-                <a class="logo-text" href="../index.html">
-                    <span class="logo-title">WWT</span> <br />
-                    <span class="logo-text">WORLD WIDE TRANSLATIONS</span>
+                <!-- logo starts -->
+                <a class="logo" href="../index.html">
+                    <img src="../images/wwt_logo_circle.png" alt="wwt-logo" />
+                    <div class="logo-text">
+                        <span class="logo-title">WWT</span> <br />
+                        <span>WORLD WIDE TRANSLATIONS</span>
+                    </div>
                 </a>
                 <!-- logo ends -->
+                <!-- navigation starts -->
                 <nav>
                     <ul>
                         <li><a href="find-translator.html">Find Translators</a></li>
@@ -37,20 +38,19 @@
                         <li><a href="about_us_page.html">About Us</a></li>
                     </ul>
                 </nav>
+                <!-- navigation ends -->
             </div>
-
-            <div class="header-btn">
+            <div class="navbar-buttons">
                 <a id="signup" href="#">Sign Up</a>
                 <a id="login" href="#">Login</a>
             </div>
         </div>
-
     </header>
-
+    <!-- all contents of this page is in this container -->
     <div class="container">
+        <!-- select area starts (user selects options to find translators) -->
         <div class="select-area">
             <h3>Select the language you want to find a translator.</h3>
-
             <form>
                 <select class="select-lang">
                     <option value="English">English</option>
@@ -80,10 +80,12 @@
 
                 <input id="search-btn" type="submit" value="Search">
             </form>
-
         </div>
+        <!-- select area ends -->
+        <!-- result area starts (search results (proper translators) are displayed here)-->
         <div class="result-area">
             <p>3 translators were found for your search.</p>
+            <!-- profile 1 -->
             <div class="profile">
                 <div class="profile-content">
                     <div class="img-rating">
@@ -98,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="profile-text">
+                    <div class="profile-info">
                         <h3>Name Surname</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque
                             molestias!
@@ -117,7 +119,7 @@
                     <a class="view-profile" href="translators_profile_page.html">View Profile</a>
                 </div>
             </div>
-
+            <!-- profile 2 -->
             <div class="profile">
                 <div class="profile-content">
                     <div class="img-rating">
@@ -131,7 +133,7 @@
                         </div>
                     </div>
 
-                    <div class="profile-text">
+                    <div class="profile-info">
                         <h3>Name Surname</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque
                             molestias!
@@ -151,7 +153,7 @@
                     <!-- <input class="view-profile" type="submit" value="View Profile"> -->
                 </div>
             </div>
-
+            <!-- profile 3 -->
             <div class="profile">
                 <div class="profile-content">
                     <div class="img-rating">
@@ -165,7 +167,7 @@
                         </div>
                     </div>
 
-                    <div class="profile-text">
+                    <div class="profile-info">
                         <h3>Name Surname</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque
                             molestias!
@@ -185,13 +187,24 @@
                 </div>
             </div>
         </div>
-
+        <!-- result area ends -->
     </div>
 
     <!-- footer starts -->
     <footer>
         <div class="logo-and-footer">
-            <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
+            <div class="footer-logo">
+                <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
+
+                <!-- <p>All Rights Reserved © 2022</p> -->
+                <div class="members">
+                    <a href="https://github.com/Muqadasa-Sherani">Muqadasa Sherani</a>
+                    |
+                    <a href="https://github.com/snnehir">Sümeyye Nur Nehir</a>
+
+                </div>
+
+            </div>
 
             <!--Categories section-->
             <div class="footer-links">
@@ -226,6 +239,8 @@
                 <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
             </div>
         </div>
+
+
     </footer>
     <!-- footer ends -->
 </body>

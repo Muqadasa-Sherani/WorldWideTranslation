@@ -50,55 +50,83 @@
 
   <!-- container starts -->
   <div class="container">
-    <!--Paragraph section-->
-
-    <div class="paragraph-section">
-      <h1>What is <span>WWT?</span></h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        sit amet lorem est. Sed hendrerit turpis felis, tempus pellentesque
-        risus porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at
-        velit tristique, lacinia enim posuere, imperdiet lectus. Ut non
-        tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
-        Pellentesque vehicula eget ipsum vel scelerisque. Maecenas efficitur
-        urna non orci bibendum tempus. Nullam pulvinar massa suscipit tortor
-        euismod dignissim. Donec vel ultrices ligula. Mauris laoreet pulvinar
-        laoreet. Etiam vitae quam at erat tempor faucibus sed vitae risus. Ut
-        vitae faucibus mauris. Donec sit amet maximus ex, a faucibus mi.
-      </p>
+    <!--first information box-->
+    <div class="box1">
+      <!--Paragraph section-->
+      <div class="paragraph-box1">
+        <h1>What is <span>WWT?</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          sit amet lorem est. Sed hendrerit turpis felis, tempus pellentesque
+          risus porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at
+          velit tristique, lacinia enim posuere, imperdiet lectus. Ut non
+          tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
+          Pellentesque vehicula eget ipsum vel scelerisque. Maecenas efficitur
+          urna non orci bibendum tempus. Nullam pulvinar massa suscipit tortor
+          euismod dignissim. Donec vel ultrices ligula. Mauris laoreet
+          pulvinar laoreet. Etiam vitae quam at erat tempor faucibus sed vitae
+          risus. Ut vitae faucibus mauris. Donec sit amet maximus ex, a
+          faucibus mi.
+        </p>
+      </div>
+      <!--picture section-->
+      <div class="picture-box1">
+        <img id="image_box1" src="../images/translation.png" alt="about_us" />
+      </div>
     </div>
-    <!--picture section-->
-    <div class="picture-section">
-      <img id="image" src="../images/translation.png" alt="about_us" />
+
+    <!--second information box-->
+    <div class="box2">
+      <!--picture section-->
+      <div class="picture-box2">
+        <img id="image_box2" src="../images/confident.png" alt="confidentiality" />
+      </div>
+      <!--paragraph section-->
+      <div class="paragraph-box2">
+        <h1>How is our <span>Confidentiality policy?</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          sit amet lorem est. Sed hendrerit turpis felis, tempus pellentesque
+          risus porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at
+          velit tristique, lacinia enim posuere, imperdiet lectus. Ut non
+          tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
+          Pellentesque vehicula eget ipsum vel scelerisque. Maecenas efficitur
+          urna non orci bibendum tempus. Nullam pulvinar massa suscipit tortor
+          euismod dignissim. Donec vel ultrices ligula. Mauris laoreet
+          pulvinar laoreet. Etiam vitae quam at erat tempor faucibus sed vitae
+          risus. Ut vitae faucibus mauris. Donec sit amet maximus ex, a
+          faucibus mi.
+        </p>
+      </div>
     </div>
   </div>
   <!-- container ends -->
 
   <!--input-section-->
   <div class="input-section">
-    <h1>Any questions or concern? <span>Mail us!</span></h1>
+    <!--title of the email-comment text area-->
+    <div class="text-box-title">
+      <h1>Any questions or concern? <span>Mail us!</span></h1>
+    </div>
+    <!--email and send button section-->
     <div class="email-button">
       <label for="email"></label>
       <input type="text" name="email" id="email" placeholder="Enter your Email..." />
       <input id="send-button" type="submit" value="Send" />
     </div>
-    <textarea name="comment" id="comment-textarea" cols="80" rows="10"></textarea>
+    <!--comment text area-->
+    <div class="text-area">
+      <textarea name="comment" cols="80" rows="10"></textarea>
+    </div>
   </div>
 
   <!-- footer starts -->
   <footer>
     <div class="logo-and-footer">
+      <!-- footer logo -->
       <div class="footer-logo">
         <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
-
-        <!-- <p>All Rights Reserved © 2022</p> -->
-        <div class="members">
-          <a href="https://github.com/Muqadasa-Sherani">Muqadasa Sherani</a>
-          |
-          <a href="https://github.com/snnehir">Sümeyye Nur Nehir</a>
-
-        </div>
-
+        <p>All Rights Reserved © 2022</p>
       </div>
       <!--Categories section-->
       <div class="footer-links">
@@ -106,9 +134,9 @@
           <li>
             <h5>CATEGORIES</h5>
           </li>
-          <li><a href="find-translator.html">Find Translators</a></li>
+          <li><a href="html/find-translator.html">Find Translators</a></li>
           <li><a href="#">Become a Translator</a></li>
-          <li><a href="../index.html">Features</a></li>
+          <li><a href="index.html">Features</a></li>
         </ul>
       </div>
 
@@ -118,7 +146,7 @@
           <li>
             <h5>CONTACT</h5>
           </li>
-          <li><a href="about_us_page.html">About Us</a></li>
+          <li><a href="html/about_us_page.html">About Us</a></li>
           <li><a href="#">FAQ</a></li>
           <li><a href="#">Help</a></li>
         </ul>
@@ -130,6 +158,11 @@
         <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
         <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
         <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
+        <div class="members">
+          <a href="https://github.com/Muqadasa-Sherani" target="blank">Muqadasa Sherani</a>
+
+          <a href="https://github.com/snnehir" target="blank">Sümeyye Nur Nehir </a>
+        </div>
       </div>
     </div>
   </footer>

@@ -133,3 +133,12 @@ footer {
   color: white;
   margin-right: 10px;
 }
+.members a {
+  display: block;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.members {
+  margin-top: 25px;
+}

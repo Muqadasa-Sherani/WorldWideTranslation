@@ -118,12 +118,9 @@ footer {
   width: 180px;
   margin-bottom: 15px;
 }
-.footer-logo {
+.footer-logo p{
   font-size: 14px;
-}
-.members a{
-  color: white;
-  margin-left: 6px;
+  margin-left: 8px;
 }
 .logo-and-footer li{
   margin-bottom: 10px;
@@ -132,10 +129,6 @@ footer {
   color: #efefef;
   text-decoration: underline;
 }
-.follow-us {
-  margin-bottom: 50px;
-}
-
 .follow-us > a {
   color: white;
   margin-right: 10px;

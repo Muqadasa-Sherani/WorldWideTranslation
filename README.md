@@ -16,3 +16,9 @@ Note:
 The repository contains pdf files of:
   - the site map of the website.
   - the project report overview and the prototype of each page.
+The project consists of 5 Sprints:
+Sprint 1: Initial report, overvies, site map and the prototype of each page.
+Sprint 2: All the HTML and CSS of the pages. And the design layout of the webpage.
+Sprint 3: All the JavaScript aspects are added. 
+Sprint 4: All the angular and jQuery aspects added.
+Sprint 5: The final touches / presentation of the project.

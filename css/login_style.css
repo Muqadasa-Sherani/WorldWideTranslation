@@ -1,0 +1,84 @@
+body{
+    background-color: whitesmoke;
+}
+
+.container1{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-info-section{
+    width: 450px;
+    height: 450px;
+    background-color: #d1e8e2;
+  border: 1px solid #d1e8e2;
+  box-shadow: 4px 4px 2px #116466;
+  border-radius: 10px;
+}
+
+.title{
+    text-align: center;
+}
+
+.google-account{
+    display: flex;    
+    align-items: center;
+    justify-content: center
+}
+
+.google-account a{
+    color: black;
+    margin-left: 10px;
+}
+
+form{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 80px;
+}
+
+form input{
+    width: 300px;
+    height: 40px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-bottom: 10px;
+}
+
+.Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff9736;
+    height: 40px;
+    width: 150px;
+    margin: 20px 80px;
+}
+
+.Button a{
+    color: white;
+}
+
+.signup-text{
+    display: flex;
+    justify-content: center;
+}
+
+.signup-text a{
+    color: gray;
+   
+}
+
+.forgot-pass-text{
+    margin-right: 30px;
+}
+
+.picture{
+    width: 450px;
+    margin-left: 50px;
+}

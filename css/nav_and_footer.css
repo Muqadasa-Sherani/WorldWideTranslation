@@ -77,6 +77,12 @@ nav a:hover{
   padding-bottom: 18px;
   border-bottom: 4px solid #116466;
 }
+
+/*the bottom-border of the navigation links when clicked, used in jquery*/
+.clicked{
+  border-bottom: 4px solid #116466;
+}
+
 .navbar-buttons{
   display: flex;
   align-items: center;

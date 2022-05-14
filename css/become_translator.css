@@ -1,0 +1,154 @@
+/*{
+    font-family: 'Baloo 2', cursive;
+} */
+#resume{
+    display: none;
+}
+
+#resume-label{
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #ff8e25;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ffd4ab;
+}
+#selected-file{
+    font-size: 12px;
+}
+label{
+    display: block;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+input[type=text], input[type=tel], input[type=email]{
+    width: 220px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+input:focus, textarea:focus{
+    box-shadow: 4px 4px 4px lightgray;
+}
+.d-flex{
+    display: flex;
+    margin: 30px;
+}
+.textarea-group{
+    margin: 10px 30px;
+}
+.group1{
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+textarea{
+    border: none;
+    outline: none;
+    width: 495px;
+}
+.accept-terms{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.accept-terms label{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+#submit-btn{
+    margin-left: 30px;
+    background-color: #116466;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*
+label{
+    display: inline-block;
+    margin: 10px 0px;
+}
+.col-1{
+    width: 140px;
+}
+.col-2{
+    width: 110px;
+}*/
+form{
+    padding: 10px 30px;
+    margin:0px 30px;
+    border: 1px solid #1c1c1c29;
+    float: left;
+}
+.container{
+    margin: auto;
+    padding: 30px 0;
+    
+}
+.muz{
+    margin: 35px 0px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+h2, p{
+    color: #116466;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1192px) {
+    form{
+        float: none;
+        width: 600px;
+        margin: auto;   
+    }
+    .muz{
+        width: 90%;
+        margin: auto;
+    }
+   
+}
+@media only screen and (max-width: 650px){
+    form{
+        width: 400px;
+    }
+
+    textarea{
+        width: 300px;
+    }
+    .textarea-group {
+        margin-right: 0;
+        width: 305px;
+        margin: auto;
+    }
+    .d-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type=text],
+    input[type=tel],
+    input[type=email] {
+        width: 300px;
+        height: 35px;
+    }
+    .group1{
+        margin-right: 0px;
+    }
+    .file-upload-group{
+        width: 305px;
+    }
+    .accept-terms{
+        margin-left: 50px;
+        flex-direction: row;
+    }
+    #submit-btn{
+        margin-left: 50px;
+    }
+
+}

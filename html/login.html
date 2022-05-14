@@ -1,152 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
 
-    <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
-    <link rel="stylesheet" href="../css/nav_and_footer.css" />
-    <link rel="stylesheet" href="../css/login_style.css" />
-    <!--font style import-->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap");
-    </style>
-    <!--icons, font awesome kit-->
-    <script
-      src="https://kit.fontawesome.com/f18ebfae9b.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
 
-  <body>
-    <!-- header starts -->
-    <header>
-      <div class="nav-bar">
-        <div class="logo-and-nav">
-          <!-- logo starts -->
-          <a class="logo" href="../index.html">
-            <img src="../images/wwt_logo_circle.png" alt="wwt-logo" />
-            <div class="logo-text">
-              <span class="logo-title">WWT</span> <br />
-              <span>WORLD WIDE TRANSLATIONS</span>
-            </div>
-          </a>
-          <!-- logo ends -->
-          <!-- navigation starts -->
-          <nav>
-            <ul>
-              <li><a href="find-translator.html">Find Translators</a></li>
-              <li><a href="#">Become a Translator</a></li>
-              <li><a href="my_translation_page.html">My Translations</a></li>
-              <li><a href="about_us_page.html">About Us</a></li>
-            </ul>
-          </nav>
-          <!-- navigation ends -->
-        </div>
-        <div class="navbar-buttons">
-          <a id="signup" href="html/signup.html">Sign Up</a>
-          <a id="login" href="html/login.html">Login</a>
-        </div>
-      </div>
-    </header>
-    <!-- header ends -->
+  <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
+  <link rel="stylesheet" href="../css/nav_and_footer.css" />
+  <link rel="stylesheet" href="../css/login_style.css" />
+  <!--font style import-->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap");
+  </style>
+  <!--icons, font awesome kit-->
+  <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
+</head>
 
-    <!--container1 section-->
-    <div class="container1">
-      <div class="login-info-section">
-        <!--title-->
-        <div class="title"><h1>Login</h1></div>
-        <!--continue with google account section-->
-        <div class="google-account">
-          <!--google icon-->
-          <a href="#"><i class="fa-brands fa-google"></i></a>
-          <!--google icon information-->
-          <a href="#"
-            ><p><u>Continue with Google account</u></p></a
-          >
-        </div>
-        <!--inputs section-->
-        <form>
-          <input type="email" id="email" placeholder="Username" required />
-          <br />
-          <input
-            type="password"
-            id="password"
-            placeholder="Password"
-            required
-          />
-          <br />
-          <!--Login Button-->
-          <div class="Button">
-            <a href="#">Login</a>
+<body>
+  <!-- header starts -->
+  <header>
+    <div class="nav-bar">
+      <div class="logo-and-nav">
+        <!-- logo starts -->
+        <a class="logo" href="../index.html">
+          <img src="../images/wwt_logo_circle.png" alt="wwt-logo" />
+          <div class="logo-text">
+            <span class="logo-title">WWT</span> <br />
+            <span>WORLD WIDE TRANSLATIONS</span>
           </div>
-        </form>
-        <!--forgot password and sign up text-->
-        <div class="signup-text">
-          <a href="#" class="forgot-pass-text">Forgot password?</a>
-          <a href="signup.html"
-            >Not a member yet? <span><u> Sign Up</u></span></a
-          >
-        </div>
+        </a>
+        <!-- logo ends -->
+        <!-- navigation starts -->
+        <nav>
+          <ul>
+            <li><a href="find-translator.html">Find Translators</a></li>
+            <li><a href="become_translator.html">Become a Translator</a></li>
+            <li><a href="my_translation_page.html">My Translations</a></li>
+            <li><a href="about_us_page.html">About Us</a></li>
+          </ul>
+        </nav>
+        <!-- navigation ends -->
       </div>
-      <!--image-->
-      <div class="image-section">
-        <img src="/images/Protection 02.jpg" alt="login" class="picture" />
+      <div class="navbar-buttons">
+        <a id="signup" href="signup.html">Sign Up</a>
+        <a id="login" href="login.html">Login</a>
       </div>
     </div>
+  </header>
+  <!-- header ends -->
 
-    <!-- footer starts -->
-    <footer>
-      <div class="logo-and-footer">
-        <!-- footer logo -->
-        <div class="footer-logo">
-          <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
-          <p>All Rights Reserved © 2022</p>
+  <!--container1 section-->
+  <div class="container1">
+    <div class="login-info-section">
+      <!--title-->
+      <div class="title">
+        <h1>Login</h1>
+      </div>
+      <!--continue with google account section-->
+      <div class="google-account">
+        <!--google icon-->
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <!--google icon information-->
+        <a href="#">
+          <p><u>Continue with Google account</u></p>
+        </a>
+      </div>
+      <!--inputs section-->
+      <form>
+        <input type="email" id="email" placeholder="Username" required />
+        <br />
+        <input type="password" id="password" placeholder="Password" required />
+        <br />
+        <!--Login Button-->
+        <div class="Button">
+          <a href="#">Login</a>
         </div>
-        <!--Categories section-->
-        <div class="footer-links">
-          <ul>
-            <li>
-              <h5>CATEGORIES</h5>
-            </li>
-            <li><a href="html/find-translator.html">Find Translators</a></li>
-            <li><a href="#">Become a Translator</a></li>
-            <li><a href="index.html">Features</a></li>
-          </ul>
-        </div>
+      </form>
+      <!--forgot password and sign up text-->
+      <div class="signup-text">
+        <a href="#" class="forgot-pass-text">Forgot password?</a>
+        <a href="signup.html">Not a member yet? <span><u> Sign Up</u></span></a>
+      </div>
+    </div>
+    <!--image-->
+    <div class="image-section">
+      <img src="/images/Protection 02.jpg" alt="login" class="picture" />
+    </div>
+  </div>
 
-        <!--Contact section-->
-        <div class="footer-links">
-          <ul>
-            <li>
-              <h5>CONTACT</h5>
-            </li>
-            <li><a href="html/about_us_page.html">About Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </div>
+  <!-- footer starts -->
+  <footer>
+    <div class="logo-and-footer">
+      <!-- footer logo -->
+      <div class="footer-logo">
+        <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
+        <p>All Rights Reserved © 2022</p>
+      </div>
+      <!--Categories section-->
+      <div class="footer-links">
+        <ul>
+          <li>
+            <h5>CATEGORIES</h5>
+          </li>
+          <li><a href="find-translator.html">Find Translators</a></li>
+          <li><a href="become_translator.html">Become a Translator</a></li>
+          <li><a href="../">Features</a></li>
+        </ul>
+      </div>
 
-        <!--Follow Us section-->
-        <div class="follow-us">
-          <h5>FOLLOW US</h5>
-          <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
-          <div class="members">
-            <a href="https://github.com/Muqadasa-Sherani" target="blank"
-              >Muqadasa Sherani</a
-            >
+      <!--Contact section-->
+      <div class="footer-links">
+        <ul>
+          <li>
+            <h5>CONTACT</h5>
+          </li>
+          <li><a href="about_us_page.html">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
 
-            <a href="https://github.com/snnehir" target="blank"
-              >Sümeyye Nur Nehir
-            </a>
-          </div>
+      <!--Follow Us section-->
+      <div class="follow-us">
+        <h5>FOLLOW US</h5>
+        <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
+        <div class="members">
+          <a href="https://github.com/Muqadasa-Sherani" target="blank">Muqadasa Sherani</a>
+
+          <a href="https://github.com/snnehir" target="blank">Sümeyye Nur Nehir
+          </a>
         </div>
       </div>
-    </footer>
-    <!-- footer ends -->
-  </body>
+    </div>
+  </footer>
+  <!-- footer ends -->
+</body>
+
 </html>

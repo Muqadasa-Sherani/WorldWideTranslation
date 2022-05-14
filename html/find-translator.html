@@ -1,256 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Find Translator</title>
-    <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
-    <link rel="stylesheet" href="../css/nav_and_footer.css" />
-    <link rel="stylesheet" href="../css/find-translator.css" />
-    <!--font style import-->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap");
-    </style>
-    <!--icons, font awesome kit-->
-    <script
-      src="https://kit.fontawesome.com/f18ebfae9b.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header>
-      <div class="nav-bar">
-        <div class="logo-and-nav">
-          <!-- logo starts -->
-          <a class="logo" href="../index.html">
-            <img src="../images/wwt_logo_circle.png" alt="wwt-logo" />
-            <div class="logo-text">
-              <span class="logo-title">WWT</span> <br />
-              <span>WORLD WIDE TRANSLATIONS</span>
-            </div>
-          </a>
-          <!-- logo ends -->
-          <!-- navigation starts -->
-          <nav>
-            <ul>
-              <li><a href="find-translator.html">Find Translators</a></li>
-              <li><a href="#">Become a Translator</a></li>
-              <li><a href="my_translation_page.html">My Translations</a></li>
-              <li><a href="about_us_page.html">About Us</a></li>
-            </ul>
-          </nav>
-          <!-- navigation ends -->
-        </div>
-        <div class="navbar-buttons">
-          <a id="signup" href="html/signup.html">Sign Up</a>
-          <a id="login" href="html/login.html">Login</a>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Find Translator</title>
+  <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
+  <link rel="stylesheet" href="../css/nav_and_footer.css">
+  <link rel="stylesheet" href="../css/find-translator.css">
+  <!-- jquery plugin -->
+  <script src="../jquery/jQuery.js"></script>
+  <script src="../js/nav-bar.js"></script>
+  <!-- star widget -->
+  <link rel="stylesheet" href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css" type="text/css" />
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/scripts/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"></script>
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxrating.js"></script>
+
+  <!--font style import-->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap");
+  </style>
+  <!--icons, font awesome kit-->
+  <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <div class="logo-and-nav">
+        <!-- logo starts -->
+        <a class="logo" href="../index.html">
+          <img src="../images/wwt_logo_circle.png" alt="wwt-logo" />
+          <div class="logo-text">
+            <span class="logo-title">WWT</span> <br />
+            <span>WORLD WIDE TRANSLATIONS</span>
+          </div>
+        </a>
+        <!-- logo ends -->
+        <!-- navigation starts -->
+        <nav>
+          <ul>
+            <li class="nav-link"><a href="find-translator.html">Find Translators</a></li>
+            <li class="nav-link"><a href="become_translator.html">Become a Translator</a></li>
+            <li class="nav-link"><a href="my_translation_page.html">My Translations</a></li>
+            <li class="nav-link"><a href="about_us_page.html">About Us</a></li>
+          </ul>
+        </nav>
+        <!-- navigation ends -->
       </div>
-    </header>
-    <!-- all contents of this page is in this container -->
-    <div class="container">
-      <!-- select area starts (user selects options to find translators) -->
-      <div class="select-area">
-        <h3>Select the language you want to find a translator.</h3>
-        <form>
-          <select class="select-lang">
-            <option value="English">English</option>
-            <option value="Turkish">Turkish</option>
-            <option value="Pashto">Pashto</option>
-            <option value="Arabic">Arabic</option>
-            <option value="Spanish">Spanish</option>
-            <option value="Korean">Korean</option>
-          </select>
-
-          <i class="fa-solid fa-arrow-right-arrow-left"></i>
-
-          <select class="select-lang">
-            <option value="Turkish">Turkish</option>
-            <option value="English">English</option>
-            <option value="Pashto">Pashto</option>
-            <option value="Arabic">Arabic</option>
-            <option value="Spanish">Spanish</option>
-            <option value="Korean">Korean</option>
-          </select>
-
-          <select name="filter">
-            <option value="price-asc">Price (Ascending)</option>
-            <option value="rating">Rating</option>
-            <option value="time">Time</option>
-          </select>
-
-          <input id="search-btn" type="submit" value="Search" />
-        </form>
+      <div class="navbar-buttons">
+        <a id="signup" href="signup.html">Sign Up</a>
+        <a id="login" href="login.html">Login</a>
       </div>
-      <!-- select area ends -->
-      <!-- result area starts (search results (proper translators) are displayed here)-->
-      <div class="result-area">
-        <p>3 translators were found for your search.</p>
-        <!-- profile 1 -->
-        <div class="profile">
-          <div class="profile-content">
-            <div class="img-rating">
-              <img src="../images/translators/user4.jpg" alt="user2" />
-              <!-- this component will be dynamic with radio buttons in the future -->
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-            </div>
-
-            <div class="profile-info">
-              <h3>Name Surname</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                incidunt porro rem atque molestias! Pariatur atque, cupiditate
-                vel, consequatur, aut modi ratione et totam blanditiis
-                architecto sed suscipit corporis placeat eaque culpa a esse
-                corrupti voluptas nesciunt nihil nemo velit?
-              </p>
-            </div>
-          </div>
-
-          <div class="side-content">
-            <div class="side-info">
-              <p>Per words: <u>0.50$</u></p>
-              <p>Time: <u>2 days</u></p>
-            </div>
-            <a class="view-profile" href="translators_profile_page.html"
-              >View Profile</a
-            >
-          </div>
-        </div>
-        <!-- profile 2 -->
-        <div class="profile">
-          <div class="profile-content">
-            <div class="img-rating">
-              <img src="../images/translators/user10.jpg" alt="user2" />
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-            </div>
-
-            <div class="profile-info">
-              <h3>Name Surname</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                incidunt porro rem atque molestias! Pariatur atque, cupiditate
-                vel, consequatur, aut modi ratione et totam blanditiis
-                architecto sed suscipit corporis placeat eaque culpa a esse
-                corrupti voluptas nesciunt nihil nemo velit?
-              </p>
-            </div>
-          </div>
-
-          <div class="side-content">
-            <div class="side-info">
-              <p>Price per words: <span>0.50</span>$</p>
-              <p>Time: 2 days</p>
-            </div>
-            <a class="view-profile" href="translators_profile_page.html"
-              >View Profile</a
-            >
-            <!-- <input class="view-profile" type="submit" value="View Profile"> -->
-          </div>
-        </div>
-        <!-- profile 3 -->
-        <div class="profile">
-          <div class="profile-content">
-            <div class="img-rating">
-              <img src="../images/translators/user8.jpg" alt="user2" />
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-            </div>
-
-            <div class="profile-info">
-              <h3>Name Surname</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                incidunt porro rem atque molestias! Pariatur atque, cupiditate
-                vel, consequatur, aut modi ratione et totam blanditiis
-                architecto sed suscipit corporis placeat eaque culpa a esse
-                corrupti voluptas nesciunt nihil nemo velit?
-              </p>
-            </div>
-          </div>
-
-          <div class="side-content">
-            <div class="side-info">
-              <p>Price per words: <span>0.50</span>$</p>
-              <p>Time: 2 days</p>
-            </div>
-            <a class="view-profile" href="translators_profile_page.html"
-              >View Profile</a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- result area ends -->
     </div>
+  </header>
+  <!-- all contents of this page is in this container -->
+  <div class="container">
+    <!-- select area starts (user selects options to find translators) -->
+    <div class="select-area">
+      <h3>Select the language you want to find a translator.</h3>
+      <form>
+        <select class="select-lang">
+          <option value="English">English</option>
+          <option value="Turkish">Turkish</option>
+          <option value="Pashto">Pashto</option>
+          <option value="Arabic">Arabic</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Korean">Korean</option>
+        </select>
 
-    <!-- footer starts -->
-    <footer>
-      <div class="logo-and-footer">
-        <!-- footer logo -->
-        <div class="footer-logo">
-          <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
-          <p>All Rights Reserved © 2022</p>
-        </div>
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
 
-        <!--Categories section-->
-        <div class="footer-links">
-          <ul>
-            <li>
-              <h5>CATEGORIES</h5>
-            </li>
-            <li><a href="find-translator.html">Find Translators</a></li>
-            <li><a href="#">Become a Translator</a></li>
-            <li><a href="../index.html">Features</a></li>
-          </ul>
-        </div>
+        <select class="select-lang">
+          <option value="Turkish">Turkish</option>
+          <option value="English">English</option>
+          <option value="Pashto">Pashto</option>
+          <option value="Arabic">Arabic</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Korean">Korean</option>
+        </select>
 
-        <!--Contact section-->
-        <div class="footer-links">
-          <ul>
-            <li>
-              <h5>CONTACT</h5>
-            </li>
-            <li><a href="about_us_page.html">About Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </div>
+        <select name="filter">
+          <option value="price-asc">Price (Ascending)</option>
+          <option value="rating">Rating</option>
+          <option value="time">Time</option>
+        </select>
 
-        <!--Follow Us section-->
-        <div class="follow-us">
-          <h5>FOLLOW US</h5>
-          <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
-          <div class="members">
-            <a href="https://github.com/Muqadasa-Sherani" target="blank"
-              >Muqadasa Sherani</a
-            >
+        <input id="search-btn" type="submit" value="Search">
+      </form>
+    </div>
+    <!-- select area ends -->
+    <!-- result area starts (search results (proper translators) are displayed here)-->
+    <div class="result-area">
+      <p>3 translators were found for your search.</p>
+      <!-- profile 1 -->
+      <div class="profile">
+        <div class="profile-content">
+          <div class="img-rating">
+            <img src="../images/translators/user4.jpg" alt="user2">
+            <!-- this component will be dynamic with radio buttons in the future -->
 
-            <a href="https://github.com/snnehir" target="blank"
-              >Sümeyye Nur Nehir
-            </a>
+            <div id='jqxRating'>
+            </div>
+            <script type="text/javascript">
+              $(document).ready(function () {
+                $("#jqxRating").jqxRating({ width: 100, height: 35 });
+              });
+            </script>
+
+          </div>
+
+          <div class="profile-info">
+            <h3>Name Surname</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque
+              molestias!
+              Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto
+              sed
+              suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?
+            </p>
           </div>
         </div>
+
+        <div class="side-content">
+          <div class="side-info">
+            <p>Per words: <u>0.50$</u></p>
+            <p>Time: <u>2 days</u></p>
+          </div>
+          <a class="view-profile" href="translators_profile_page.html">View Profile</a>
+        </div>
       </div>
-    </footer>
-    <!-- footer ends -->
-  </body>
+      <!-- profile 2 -->
+      <div class="profile">
+        <div class="profile-content">
+          <div class="img-rating">
+            <img src="../images/translators/user10.jpg" alt="user2">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+
+          <div class="profile-info">
+            <h3>Name Surname</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque
+              molestias!
+              Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto
+              sed
+              suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?
+            </p>
+          </div>
+        </div>
+
+        <div class="side-content">
+          <div class="side-info">
+            <p>Price per words: <span>0.50</span>$</p>
+            <p>Time: 2 days</p>
+          </div>
+          <a class="view-profile" href="translators_profile_page.html">View Profile</a>
+          <!-- <input class="view-profile" type="submit" value="View Profile"> -->
+        </div>
+      </div>
+      <!-- profile 3 -->
+      <div class="profile">
+        <div class="profile-content">
+          <div class="img-rating">
+            <img src="../images/translators/user8.jpg" alt="user2">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+
+          <div class="profile-info">
+            <h3>Name Surname</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque
+              molestias!
+              Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto
+              sed
+              suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?
+            </p>
+          </div>
+        </div>
+
+        <div class="side-content">
+          <div class="side-info">
+            <p>Price per words: <span>0.50</span>$</p>
+            <p>Time: 2 days</p>
+          </div>
+          <a class="view-profile" href="translators_profile_page.html">View Profile</a>
+        </div>
+      </div>
+    </div>
+    <!-- result area ends -->
+  </div>
+
+  <!-- footer starts -->
+  <footer>
+    <div class="logo-and-footer">
+      <!-- footer logo -->
+      <div class="footer-logo">
+        <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
+        <p>All Rights Reserved © 2022</p>
+      </div>
+
+      <!--Categories section-->
+      <div class="footer-links">
+        <ul>
+          <li>
+            <h5>CATEGORIES</h5>
+          </li>
+          <li><a href="find-translator.html">Find Translators</a></li>
+          <li><a href="become_translator.html">Become a Translator</a></li>
+          <li><a href="../">Features</a></li>
+        </ul>
+      </div>
+
+      <!--Contact section-->
+      <div class="footer-links">
+
+        <ul>
+          <li>
+            <h5>CONTACT</h5>
+          </li>
+          <li><a href="about_us_page.html">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+
+      <!--Follow Us section-->
+      <div class="follow-us">
+        <h5>FOLLOW US</h5>
+        <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
+        <div class="members">
+          <a href="https://github.com/Muqadasa-Sherani" target="blank">Muqadasa Sherani</a>
+
+          <a href="https://github.com/snnehir" target="blank">Sümeyye Nur Nehir </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends -->
+</body>
+
 </html>

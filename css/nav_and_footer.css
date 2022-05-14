@@ -11,7 +11,7 @@ body {
 /* all <li>, <ul>, <a> elements will have these styles 
 initially because this file is imported from all pages */
 
-ul{
+ul {
   padding-inline-start: 0px;
 }
 
@@ -27,71 +27,91 @@ a {
 
 /* nav-bar class includes 2 divs: logo-and-nav + navbar-buttons */
 .nav-bar {
-  display: flex; /* display divs side by side */
-  justify-content: space-between; /* separate items in flex direction (flex direction is row (x axis) intially) */
-  align-items: center; /* center items vertically (cross axis: y) */
+  display: flex;
+  /* display divs side by side */
+  justify-content: space-between;
+  /* separate items in flex direction (flex direction is row (x axis) intially) */
+  align-items: center;
+  /* center items vertically (cross axis: y) */
   padding: 5px 20px;
   background-color: white;
 }
+
 /* logo-and-nav class includes 2 divs: logo + nav */
 .logo-and-nav {
-  display: flex; /* display divs side by side */
-  justify-content: space-between; 
-  align-items: center; /* center items vertically */
+  display: flex;
+  /* display divs side by side */
+  justify-content: space-between;
+  align-items: center;
+  /* center items vertically */
 }
+
 /* style logo */
-.logo{
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
 }
-.logo img{
+
+.logo img {
   width: 45px;
   margin: 0 5px;
 }
-.logo-text{
+
+.logo-text {
   text-align: center;
   color: #116466;
   margin-right: 5px;
   font-size: 8px;
 }
-.logo-title{
+
+.logo-title {
   font-size: 18px;
   font-weight: bold;
 }
+
 /* style navigation */
-nav ul{
-  display: flex; /* display <li> elements side by side */
+nav ul {
+  display: flex;
+  /* display <li> elements side by side */
+  align-items: center;
 }
-nav ul li{
+
+nav ul li {
   margin: 0 12px;
+  padding-bottom: 8px;
 }
+
 /* style both nav-links and signup link */
-nav a, #signup{
+nav a,
+#signup {
   font-size: 14px;
   color: #383838;
 }
-nav a:hover{
+
+/*nav a:hover{
   color: #116466;
   padding-bottom: 18px;
   border-bottom: 4px solid #116466;
-}
-
-/*the bottom-border of the navigation links when clicked, used in jquery*/
-.clicked{
+}*/
+.active {
+  color: #116466;
   border-bottom: 4px solid #116466;
+  padding-top: 4px;
 }
 
-.navbar-buttons{
+.navbar-buttons {
   display: flex;
   align-items: center;
 }
+
 #signup {
   padding: 12px 20px;
   margin: 0 10px;
 }
-#signup:hover{
+
+#signup:hover {
   color: #116466;
 }
 
@@ -117,28 +137,36 @@ footer {
 .logo-and-footer {
   padding: 20px 0;
   display: flex;
-  justify-content: space-evenly; /* separate elements horizontally */
-  align-items: center; /* center vertically */
+  justify-content: space-evenly;
+  /* separate elements horizontally */
+  align-items: center;
+  /* center vertically */
 }
-.logo-and-footer img{
+
+.logo-and-footer img {
   width: 180px;
   margin-bottom: 15px;
 }
-.footer-logo p{
+
+.footer-logo p {
   font-size: 14px;
   margin-left: 8px;
 }
-.logo-and-footer li{
+
+.logo-and-footer li {
   margin-bottom: 10px;
 }
-.footer-links a{
+
+.footer-links a {
   color: #efefef;
   text-decoration: underline;
 }
-.follow-us > a {
+
+.follow-us>a {
   color: white;
   margin-right: 10px;
 }
+
 .members a {
   display: block;
   color: white;

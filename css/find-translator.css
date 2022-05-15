@@ -97,3 +97,8 @@ select{
     margin-bottom: 10px;
     cursor: pointer;
 }
+
+/*for paragraph expander*/
+.read-more .morecontent div{
+    display: none;
+}

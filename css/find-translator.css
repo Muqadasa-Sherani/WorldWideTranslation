@@ -80,6 +80,7 @@ select{
     align-items: center; /* center items horizontally */
     text-align: center;
     margin-right: 20px;
+    margin: 10px 10px;
     border: 2px solid #b8dcd3;
     border-radius: 5px;
     width: 20%;

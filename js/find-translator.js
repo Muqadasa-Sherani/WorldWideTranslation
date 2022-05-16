@@ -29,4 +29,6 @@ $(document).ready(function(){
     return false; //used to prevent url being submitted.
   });
 
+  $("#rating").jqxRating({ width: 100, height: 35, value:2 });
+
 });

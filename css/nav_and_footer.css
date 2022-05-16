@@ -33,7 +33,7 @@ a {
   /* separate items in flex direction (flex direction is row (x axis) intially) */
   align-items: center;
   /* center items vertically (cross axis: y) */
-  padding: 5px 20px;
+  padding: 0px 22px;
   background-color: white;
 }
 
@@ -51,6 +51,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px 0;
   margin-right: 10px;
 }
 
@@ -73,6 +74,7 @@ a {
 
 /* style navigation */
 nav ul {
+  margin: 0px;
   display: flex;
   /* display <li> elements side by side */
   align-items: center;
@@ -80,7 +82,6 @@ nav ul {
 
 nav ul li {
   margin: 0 12px;
-  padding-bottom: 8px;
 }
 
 /* style both nav-links and signup link */
@@ -98,7 +99,8 @@ nav a,
 .active {
   color: #116466;
   border-bottom: 4px solid #116466;
-  padding-top: 4px;
+  padding-top: 28px;
+  padding-bottom: 22px;
 }
 
 .navbar-buttons {

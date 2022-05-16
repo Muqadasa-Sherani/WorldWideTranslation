@@ -34,6 +34,26 @@
     ></script>
     <!-- END: jquery widget -->
 
+    <!-- START: star jquery widget -->
+    <link
+      rel="stylesheet"
+      href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="../jquery/jqwidgets-ver14.0.0/scripts/jquery-1.11.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxrating.js"
+    ></script>
+    <!-- END: star widget -->
+
     <!--javascript file for expandable paragraph jquery plugin-->
     <script src="../js/find-translator.js"></script>
 
@@ -135,12 +155,7 @@
               <img src="../images/translators/user4.jpg" alt="user2" />
               <!-- this component will be dynamic with radio buttons in the future -->
 
-              <div id="jqxRating"></div>
-              <script type="text/javascript">
-                $(document).ready(function () {
-                  $("#jqxRating").jqxRating({ width: 100, height: 35 });
-                });
-              </script>
+              <div id="rating"></div>
             </div>
 
             <div class="profile-info">

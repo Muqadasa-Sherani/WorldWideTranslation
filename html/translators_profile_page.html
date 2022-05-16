@@ -13,6 +13,10 @@
   </style>
   <!--icons, font awesome kit-->
   <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../jquery/jquery-ui.css">
+  <script src="../jquery/jQuery.js"></script>
+  <script src="../jquery/jquery-ui.js"></script>
+  <script src="../js/payment.js"></script>
 </head>
 
 <body>
@@ -47,7 +51,34 @@
     </div>
   </header>
   <!-- header ends -->
+  <!-- modal starts here. auto: false -->
+  <div id="dialog-form" title="Create new user">
+    <p class="validateTips">All form fields are required.</p>
 
+    <form>
+      <fieldset>
+        <label for="name">Name on Card</label>
+        <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
+
+        <label for="email">Card Number</label>
+        <input type="text" name="card-number" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX"
+          class="text ui-widget-content ui-corner-all" pattern="[0-9]+">
+
+        <label for="cvv">CVV</label>
+        <input type="text" name="cvv" id="cvv" class="text ui-widget-content ui-corner-all">
+
+        <label for="expiration">Expiration Date</label>
+        <input type="text" name="expiration-date" id="expiration-date" class="text ui-widget-content ui-corner-all"
+          placeholder="MM/YY">
+        <!-- Allow form submission with keyboard without duplicating the dialog button -->
+        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+
+        <!-- TODO: Master Card - Visa -->
+        <!-- Input Validation -->
+        <!-- Style inputs -->
+      </fieldset>
+    </form>
+  </div>
   <!-- profile section starts -->
   <div class="profile-section">
     <!--profile image section-->
@@ -66,7 +97,7 @@
         <h1><u>$0.10</u></h1>
       </div>
 
-      <a id="price-box-button" href="#">SEND FILE</a>
+      <a id="create-user" href="#">SEND FILE</a>
     </div>
   </div>
   <!-- profile section ends -->

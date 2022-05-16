@@ -53,6 +53,7 @@ h3 {
   justify-content: space-between;
   margin: 50px;
 }
+
 /* no id duplicate!*/
 .customer-pic-id {
   width: 170px;
@@ -68,4 +69,43 @@ h3 {
   align-items: center;
   display: flex;
   padding: 20px;
+}
+
+/* dialog styling */
+label,
+input {
+  display: block;
+}
+
+input.text {
+  margin-bottom: 12px;
+  width: 95%;
+  padding: .4em;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin-top: 25px;
+}
+
+
+.ui-dialog .ui-state-error {
+  padding: .3em;
+}
+
+.validateTips {
+  border: 1px solid transparent;
+  padding: 0.3em;
+}
+
+input[type=text]::placeholder {
+  opacity: 0.3;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 4px;
 }

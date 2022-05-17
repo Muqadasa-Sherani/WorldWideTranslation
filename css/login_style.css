@@ -14,7 +14,7 @@ body{
 .login-info-section{
     width: 450px;
     height: 450px;
-    background-color: #d1e8e2;
+    background-color: #d1e8e267;
   border: 1px solid #d1e8e2;
   box-shadow: 4px 4px 2px #116466;
   border-radius: 10px;
@@ -79,6 +79,11 @@ form input{
 }
 
 .picture{
-    width: 450px;
+    width: 370px;
     margin-left: 50px;
+}
+@media screen and (max-width: 1000px) {
+    .picture{
+        display: none;
+    }
 }

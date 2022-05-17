@@ -1,8 +1,10 @@
 /* style for header content */
-.header-container{
+
+.header-container {
   background-color: #d1e8e2;
 }
-.header-content{
+
+.header-content {
   width: 80%;
   height: 100vh;
   margin: auto;
@@ -11,24 +13,29 @@
   align-items: center;
 }
 
-.header-content img{
+.header-side-img {
   width: 85%;
 }
-.header-content .text h1{  
+
+.header-content .text h1 {
   text-align: center;
   font-size: 50px;
 }
-.header-content .text h1 span{
+
+.header-content .text h1 span {
   color: #116466;
 }
-.header-content .text p{
+
+.header-content .text p {
   width: 90%;
   margin: auto;
-  text-align: justify; /* ? */
+  text-align: justify;
+  /* ? */
   font-size: 20px;
   color: #757575;
 }
-.header-content .text a{
+
+#learn-more {
   background-color: rgb(253, 174, 109);
   color: white;
   display: block;
@@ -44,18 +51,20 @@
 
 
 /* introduction section: how wwt works */
-.introduction-container{
+.introduction-container {
   width: 90%;
   margin: auto;
   margin-bottom: 50px;
 }
+
 /* how wwt works? & 100% safety guaranteed */
-.introduction-container h1{
+.introduction-container h1 {
   text-align: center;
   padding: 50px 50px;
   margin: 0;
 }
-.step{
+
+.step {
   background-color: #d1e8e2;
   border: 1px solid #d1e8e2;
   box-shadow: 4px 4px 2px #116466;
@@ -67,30 +76,36 @@
   justify-content: center;
   align-items: center;
 }
-.step .text{
+
+.step .text {
   width: 50%;
 }
-.step .text p{
+
+.step .text p {
   color: #525252;
   text-align: justify;
 }
-.step-img{
+
+.step-img {
   width: calc(100px + 10%);
   height: calc(100px + 10%);
   margin-left: 5%;
 }
 
-#complete{
+#complete {
   width: calc(95px + 5%);
-  padding: 5% 2% 5% 2%; /* image does not have padding initially so give some padding */
-}
-#find-translator{
-  width: calc(115px + 10%);
-  height: calc(115px + 10%);;
+  padding: 5% 2% 5% 2%;
+  /* image does not have padding initially so give some padding */
 }
 
-.introduction-container h1 > img{
-  width:45px;
+#find-translator {
+  width: calc(115px + 10%);
+  height: calc(115px + 10%);
+  ;
+}
+
+.introduction-container h1>img {
+  width: 45px;
   display: block;
   margin: auto;
   margin-top: 20px;
@@ -98,24 +113,26 @@
 
 /* see other's comments */
 
-.comments-container{
+.comments-container {
   width: 80%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.comments-container h1{
+
+.comments-container h1 {
   margin-left: 10px;
   padding: 20px 20px;
 }
 
-.comments-container .comment-area img{
+.comments-container .comment-area img {
   width: 120px;
   height: 120px;
   margin: 15px;
   border-radius: 50%;
 }
-.comment-area{
+
+.comment-area {
   background-color: white;
   box-shadow: 4px 4px 2px #7e7e7e;
   border-radius: 10px;
@@ -125,22 +142,125 @@
   display: flex;
   justify-content: space-around;
 }
-.comment{
+
+.comment {
   width: 80%;
 }
-.comment h3{
+
+.comment h3 {
   text-align: right;
   margin-right: 15px;
 }
-.comment blockquote{
+
+.comment blockquote {
   color: #757575;
 }
 
-.comments-container h1 a{
-  font-size: inherit; /* h1 size */
+.comments-container h1 a {
+  font-size: inherit;
+  /* h1 size */
   color: #f7902f;
 }
 
-.comments-container h1 a:hover{
+.comments-container h1 a:hover {
   color: #116466;
+}
+
+@media screen and (max-width: 920px) {
+  .header-content {
+    height: 95vh;
+  }
+
+  .header-content .text h1 {
+    font-size: 46px;
+  }
+
+  .header-content .text {
+    margin-top: -20px;
+  }
+
+  .header-content {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .header-side-img {
+    display: none;
+  }
+
+  .header-side-img {
+    display: inline-block;
+    width: 70%;
+    margin-top: -10px;
+  }
+
+  #learn-more {
+    margin-top: 30px
+  }
+
+}
+
+@media screen and (max-width:780px) {
+  .header-content .text h1 {
+    font-size: 40px;
+  }
+
+  .header-content .text {
+    margin-top: -40px;
+  }
+
+  .header-content .text p {
+    font-size: 14px;
+  }
+
+  #learn-more {
+    width: 110px;
+    font-size: 16px;
+    padding: 10px 12px;
+    margin-top: 40px;
+  }
+
+
+  .comment-area {
+    width: 100%;
+  }
+
+
+  .header-content {
+    width: 90%;
+  }
+
+  .comment {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 530px) {
+  .header-side-img {
+    width: 85%;
+  }
+  .step {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .step .text{
+    width: 85%;
+  }
+  .comments-container .comment-area img {
+    width: 50px;
+    height: 50px;
+    margin: 25px 0px;
+  }
+
+  blockquote {
+    margin: 20px 10px;
+  }
+}
+
+@media screen and (min-height: 844px) {
+  .header-content .text {
+    margin-top: -140px;
+  }
+
 }

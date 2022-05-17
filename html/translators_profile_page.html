@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Translator's Profile</title>
   <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
   <link rel="stylesheet" href="../css/nav_and_footer.css" />
@@ -17,36 +19,56 @@
   <script src="../jquery/jQuery.js"></script>
   <script src="../jquery/jquery-ui.js"></script>
   <script src="../js/payment.js"></script>
+  <!--javascript file for navagation bar for jquery plugin-->
+  <script src="../js/nav-bar.js"></script>
 </head>
 
 <body>
 
   <header>
-    <div class="nav-bar">
+    <div class="navbar">
       <div class="logo-and-nav">
-        <!-- logo starts -->
-        <a class="logo" href="../index.html">
-          <img src="../images/wwt_logo_circle.png" alt="wwt-logo" />
-          <div class="logo-text">
-            <span class="logo-title">WWT</span> <br />
-            <span>WORLD WIDE TRANSLATIONS</span>
+        <div class="burger-and-logo">
+          <!-- hamburger menu starts -->
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-        </a>
-        <!-- logo ends -->
+          <!-- hamburger menu ends -->
+          <!-- logo starts -->
+          <a class="logo" href="../">
+            <img class="logo-img" src="../images/wwt_logo_circle.png" alt="wwt-logo" />
+            <div class="logo-text">
+              <span>WWT</span><br />
+              <span>WORLD WIDE TRANSLATIONS</span>
+            </div>
+          </a>
+          <!-- logo ends -->
+        </div>
+
         <!-- navigation starts -->
         <nav>
-          <ul>
-            <li><a href="find-translator.html">Find Translators</a></li>
-            <li><a href="#">Become a Translator</a></li>
-            <li><a href="my_translation_page.html">My Translations</a></li>
-            <li><a href="about_us_page.html">About Us</a></li>
+          <ul class="nav-ul">
+            <li class="nav-link">
+              <a href="find-translator.html">Find Translators</a>
+            </li>
+            <li class="nav-link">
+              <a href="become_translator.html">Become a Translator</a>
+            </li>
+            <li class="nav-link">
+              <a href="my_translation_page.html">My Translations</a>
+            </li>
+            <li class="nav-link">
+              <a href="about_us_page.html">About Us</a>
+            </li>
           </ul>
         </nav>
         <!-- navigation ends -->
       </div>
       <div class="navbar-buttons">
-        <a id="signup" href="#">Sign Up</a>
-        <a id="login" href="#">Login</a>
+        <a id="signup" href="signup.html">Sign Up</a>
+        <a id="login" href="login.html">Login</a>
       </div>
     </div>
   </header>

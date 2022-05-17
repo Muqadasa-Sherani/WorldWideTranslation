@@ -29,6 +29,7 @@ $(document).ready(function(){
     return false; //used to prevent url being submitted.
   });
 
-  $("#rating").jqxRating({ width: 100, height: 35, value:2 });
+  $(".rating").jqxRating({ width: 112, height: 35, disabled: true, value:4 });
+  $(".jqx-rating-image-default, .jqx-rating-image-backward").css("cursor", "default")
 
 });

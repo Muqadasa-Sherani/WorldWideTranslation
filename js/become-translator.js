@@ -41,6 +41,6 @@ $("document").ready(()=>{
         minLength: 1,
       });
 
-      $('#jqxTextArea').jqxTextArea({ placeHolder: 'Why Do You Want to be an WWT Translator?', height: 90, width: 300, minLength: 1, });
+      $('#jqxTextArea').jqxTextArea({ placeHolder: 'Why Do You Want to be an WWT Translator?', height: 90, width: 250, minLength: 1, });
 
 })

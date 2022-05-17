@@ -17,7 +17,14 @@
   <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
   <!-- jqueryy plugin -->
   <script src="../jquery/jQuery.js"></script>
+  <!-- START: star jquery widget -->
+  <link rel="stylesheet" href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css" type="text/css" />
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/scripts/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"></script>
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxrating.js"></script>
+  <!-- END: star widget -->
   <script src="../js/nav-bar.js"></script>
+  <script src="../js/my-translations.js"></script>
 </head>
 
 <body>
@@ -89,7 +96,10 @@
       </div>
       <div class="inside-box-buttons">
         <a id="download-button" href="#">Download</a>
-        <a id="rate-button" href="translators_profile_page.html">Rate Translator</a>
+        <div class="rate">
+          <span>Rate Translator</span>
+          <div id="rating_new"></div>
+        </div>
       </div>
     </div>
     <!--Pending translation files section-->
@@ -104,6 +114,35 @@
       <p>3 days</p>
 
       <h4><u>Report a Problem</u></h4>
+    </div>
+    <h2><u>COMPLETED</u></h2>
+    <div class="new-translation-container">
+      <div class="inside-box-text">
+        <h4>Translation of your file "Ogrenci_belgesi.docx" is completed!</h4>
+        <p>13 days ago</p>
+      </div>
+      <div class="inside-box-buttons">
+        <a id="download-button" href="#">Download</a>
+        <div class="rate">
+          <span>Rate Translator</span>
+          <div id="rating_old1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="new-translation-container">
+
+      <div class="inside-box-text">
+        <h4>Translation of your file "Ogrenci_belgesi.docx" is completed!</h4>
+        <p>13 days ago</p>
+      </div>
+      <div class="inside-box-buttons">
+        <a id="download-button" href="#">Download</a>
+        <div class="rate">
+          <span>Rate Translator </span>
+          <div id="rating_old2"></div>
+        </div>
+
+      </div>
     </div>
   </div>
 

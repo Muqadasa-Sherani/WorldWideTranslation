@@ -18,7 +18,17 @@
   <link rel="stylesheet" href="../jquery/jquery-ui.css">
   <script src="../jquery/jQuery.js"></script>
   <script src="../jquery/jquery-ui.js"></script>
+
+  <!-- START: star jquery widget -->
+  <link rel="stylesheet" href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css" type="text/css" />
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"></script>
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxrating.js"></script>
+  <!-- END: star widget -->
+
+  <!--javascript file for expandable paragraph jquery plugin-->
+  <script src="../js/find-translator.js"></script>
   <script src="../js/payment.js"></script>
+  <script src="../js/translators-profile.js"></script>
   <!--javascript file for navagation bar for jquery plugin-->
   <script src="../js/nav-bar.js"></script>
 </head>
@@ -74,24 +84,29 @@
   </header>
   <!-- header ends -->
   <!-- modal starts here. auto: false -->
-  <div id="dialog-form" title="Create new user">
-    <p class="validateTips">All form fields are required.</p>
+  <div id="dialog-form" title="Order Translation">
 
-    <form>
+    <form action="my_translation_page.html">
       <fieldset>
+        <div class="file-grp">
+          <input type="file" id="resume" accept=".txt, .docx, application/msword" required />
+          <label id="resume-label" for="resume">Upload Your File</label>
+          <span id="selected-file">You did not choose any file.</span>
+        </div>
+        <h4 class="price">Cost of your file: 50$</h4>
         <label for="name">Name on Card</label>
-        <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
+        <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" required>
 
         <label for="email">Card Number</label>
         <input type="text" name="card-number" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX"
-          class="text ui-widget-content ui-corner-all" pattern="[0-9]+">
+          class="text ui-widget-content ui-corner-all" pattern="[0-9]{16}" required>
 
         <label for="cvv">CVV</label>
-        <input type="text" name="cvv" id="cvv" class="text ui-widget-content ui-corner-all">
+        <input type="text" name="cvv" id="cvv" class="text ui-widget-content ui-corner-all" pattern="[0-9]{3}" required>
 
         <label for="expiration">Expiration Date</label>
         <input type="text" name="expiration-date" id="expiration-date" class="text ui-widget-content ui-corner-all"
-          placeholder="MM/YY">
+          pattern="[0-9]{2}\/[0-9]{2}" placeholder="MM/YY" required>
         <!-- Allow form submission with keyboard without duplicating the dialog button -->
         <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
 
@@ -119,7 +134,7 @@
         <h1><u>$0.10</u></h1>
       </div>
 
-      <a id="create-user" href="#">SEND FILE</a>
+      <a id="send-btn" href="#">Send File</a>
     </div>
   </div>
   <!-- profile section ends -->
@@ -184,6 +199,7 @@
     <div class="customer-profile-section">
       <div class="customer-pic">
         <img class="customer-pic-id" src="../images/customers/customer_pic.jpg" alt="customer" />
+        <div class="rating"></div>
       </div>
       <div class="customer-comment">
         <p>
@@ -195,19 +211,12 @@
         </p>
       </div>
 
-      <div class="icons">
-        <div class="stars">
-          <i class="fa-solid fa-star fa-2xl"></i>
-          <i class="fa-solid fa-star fa-2xl"></i>
-          <i class="fa-solid fa-star fa-2xl"></i>
-          <i class="fa-regular fa-star fa-2xl"></i>
-          <i class="fa-regular fa-star fa-2xl"></i>
-        </div>
-      </div>
+
     </div>
     <div class="customer-profile-section">
       <div class="customer-pic">
         <img class="customer-pic-id" src="../images/customers/customer_pic2.jpg" alt="customer" />
+        <div class="rating"></div>
       </div>
       <div class="customer-comment">
         <p>
@@ -217,14 +226,6 @@
           velit tristique, lacinia enim posuere, imperdiet lectus. Ut non
           tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
         </p>
-      </div>
-
-      <div class="stars">
-        <i class="fa-solid fa-star fa-2xl"></i>
-        <i class="fa-solid fa-star fa-2xl"></i>
-        <i class="fa-solid fa-star fa-2xl"></i>
-        <i class="fa-regular fa-star-half-stroke fa-2xl"></i>
-        <i class="fa-regular fa-star fa-2xl"></i>
       </div>
     </div>
   </div>

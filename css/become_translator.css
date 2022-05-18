@@ -27,7 +27,8 @@
 }
 
 .accept-terms {
-    margin: 5px 20px;
+    align-items: center;
+    margin: 10px 20px;
 }
 
 .accept-terms label {
@@ -99,6 +100,7 @@ p {
         width: 700px;
         margin: auto;
     }
+
     .bottom-content {
         width: 80%;
         margin: auto;
@@ -156,7 +158,8 @@ p {
         justify-content: flex-start;
         align-items: center;
     }
-    img{
+
+    img {
         width: 230px;
     }
 

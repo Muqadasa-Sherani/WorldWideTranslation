@@ -42,5 +42,6 @@ $("document").ready(()=>{
       });
 
       $('#jqxTextArea').jqxTextArea({ placeHolder: 'Why Do You Want to be an WWT Translator?', height: 90, width: 250, minLength: 1, });
+      
 
 })

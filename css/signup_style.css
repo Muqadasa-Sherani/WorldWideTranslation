@@ -39,10 +39,9 @@ form{
     margin:20px 40px;
 }
 
-form input{
-    margin-bottom: 10px;
-    margin-right: 10px;
-    height: 30px;
+.input-center{
+    width: 65%;
+    margin: auto;
 }
 
 .agreement-text{
@@ -61,6 +60,7 @@ form input{
     height: 40px;
     width: 150px;
     margin: 0px 115px;
+    border-radius: 3px;
 }
 
 .Button a{
@@ -89,5 +89,11 @@ form input{
 @media screen and (max-width: 1000px) {
     .picture {
         display: none;
+    }  
+}
+
+@media screen and (max-width: 1200px) {
+    .container1{
+        width: 100%;
     }
 }

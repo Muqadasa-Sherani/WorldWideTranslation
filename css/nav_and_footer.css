@@ -139,6 +139,7 @@ footer {
 .logo-and-footer {
   padding: 20px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   /* separate elements horizontally */
   align-items: center;
@@ -191,6 +192,20 @@ footer {
   }
 
 }
+
+@media screen and (max-width: 600px) {
+  .logo-and-footer{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+  }
+
+  .footer-logo{
+    display: none;
+  }
+
+}
+
 
 @media screen and (max-width:850px) {
   nav a {

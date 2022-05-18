@@ -2,6 +2,16 @@ body{
     background-color: whitesmoke;
 }
 
+#signup{
+    background-color: #ff9736 !important;
+    color: white;
+    border-radius: 3px;
+}
+#signup:hover{
+    background-color: #116466 !important;
+    color: white;
+}
+
 .container1{
     width: 80%;
     height: 100vh;
@@ -14,7 +24,7 @@ body{
 .login-info-section{
     width: 450px;
     height: 450px;
-    background-color: #d1e8e267;
+    background-color: #d1e8e2;;
   border: 1px solid #d1e8e2;
   box-shadow: 4px 4px 2px #116466;
   border-radius: 10px;
@@ -36,18 +46,11 @@ body{
 }
 
 form{
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 80px;
-}
-
-form input{
-    width: 300px;
-    height: 40px;
-    /* align-items: center; */
-    /* justify-content: center; */
-    margin-bottom: 10px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .Button{
@@ -55,9 +58,11 @@ form input{
     align-items: center;
     justify-content: center;
     background-color: #ff9736;
+    border-radius: 3px;
     height: 40px;
     width: 150px;
-    margin: 20px 80px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .Button a{
@@ -85,5 +90,11 @@ form input{
 @media screen and (max-width: 1000px) {
     .picture{
         display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .container1{
+        width: 100%;
     }
 }

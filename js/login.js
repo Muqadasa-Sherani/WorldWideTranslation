@@ -10,22 +10,19 @@ $(document).ready(function(){
     $("#password").jqxPasswordInput({ 
         placeHolder: "Enter your password...", 
         width: 250, 
-        height: 30, 
-        showStrength: true, 
-        showStrengthPosition: "right" 
-    });
-        
-    // Create jqxValidator.
-    $("#form").jqxValidator({
-        rules: [
-            { input: "#username", action: 'keyup, blur', rule: 'required' },
-            { input: "#password", action: 'keyup, blur', rule: 'required' }
-            
-        ]
+        height: 30,
+        minLength: 1,
     });
 
     // Validate the Form.
     $("#submit").click(function () {
-        $('#form').jqxValidator('validate');
+        const user = "Admin";
+        const pass = "admin123";
+        if($("#username").val() == user && $("#password").val() == pass){
+            location.href = "../html/my_translation_page.html";
+        }
+        else{
+            alert("wtf");
+        }
     });    
 });

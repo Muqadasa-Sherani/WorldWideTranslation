@@ -12,12 +12,15 @@ body {
 }
 
 .box1 {
-  display: flex;
+  position: relative;
   margin-top: 80px;
 }
+
+
 /* RESPONSIVE */
-#image_box1 {
-  width: 350px;
+.picture-right {
+  float: right;
+  width: 30%;
   padding: 20px 40px;
 }
 
@@ -31,12 +34,14 @@ span{
 }
 
 .box2{
-  display: flex;
-  margin-top: 50px;
+  position: relative;
+  margin-top: 15%;
 }
 
-#image_box2{
-  width: 350px;
+.picture-left{
+  float: left;
+ padding: 0 20px 20px 0;
+ width: 30%;
 }
 
 .paragraph-box2{
@@ -50,12 +55,13 @@ span{
 .input-section {
   width: 80%;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 5%;
+  margin-top: 7%;
 }
 
-.text-box-title{
+/*.text-box-title{
   text-align: center;
-}
+}*/
 
 .email-button {
   display: flex;
@@ -88,4 +94,19 @@ span{
   margin: auto;
   margin-top: 10px;
   outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .picture-right, .picture-left{
+    display: none;
+  }
+
+  .paragraph-box1, .paragraph-box2{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .text-area, .email-button{
+    width: 100%;
+  }
 }

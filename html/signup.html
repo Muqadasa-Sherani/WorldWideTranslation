@@ -1,237 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup</title>
 
-    <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
-    <link rel="stylesheet" href="../css/nav_and_footer.css" />
-    <link rel="stylesheet" href="../css/signup_style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
 
-    <!-- start of jquery widget-->
-    <link
-      rel="stylesheet"
-      href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.light.css"
-    />
-    <!-- jquery library -->
-    <script src="../jquery/jQuery.js"></script>
-    <script
-      type="text/javascript"
-      src="../jquery/jqwidgets-ver14.0.0/scripts/demos.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"
-    ></script>
-    <!--input box-->
-    <script
-      type="text/javascript"
-      src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxinput.js"
-    ></script>
-    <!--input password box-->
-    <script
-      type="text/javascript"
-      src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxpasswordinput.js"
-    ></script>
-    <!--input validator-->
-    <script
-      type="text/javascript"
-      src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxvalidator.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxtooltip.js"
-    ></script>
-    <!-- end of jquery widget-->
+  <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
+  <link rel="stylesheet" href="../css/nav_and_footer.css" />
+  <link rel="stylesheet" href="../css/signup_style.css" />
 
-    <!--login javascript file-->
-    <script src="../js/signup.js"></script>
-    <!--javascript file for navagation bar for jquery plugin-->
-    <script src="../js/nav-bar.js"></script>
+  <!-- start of jquery widget-->
+  <link rel="stylesheet" href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css" type="text/css" />
+  <link rel="stylesheet" href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.light.css" />
+  <!-- jquery library -->
+  <script src="../jquery/jQuery.js"></script>
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/scripts/demos.js"></script>
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"></script>
+  <!--input box-->
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxinput.js"></script>
+  <!--input password box-->
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxpasswordinput.js"></script>
+  <!--input validator-->
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxvalidator.js"></script>
+  <script type="text/javascript" src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxtooltip.js"></script>
+  <!-- end of jquery widget-->
 
-    <!--font style import-->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap");
-    </style>
-    <!--icons, font awesome kit-->
-    <script
-      src="https://kit.fontawesome.com/f18ebfae9b.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!--login javascript file-->
+  <script src="../js/signup.js"></script>
+  <!--javascript file for navagation bar for jquery plugin-->
+  <script src="../js/nav-bar.js"></script>
 
-  <body>
-    <!-- header starts -->
-    <header>
-      <div class="navbar">
-        <div class="logo-and-nav">
-          <div class="burger-and-logo">
-            <!-- hamburger menu starts -->
-            <div class="burger">
-              <span></span>
-              <span></span>
-              <span></span>
+  <!--font style import-->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@300&family=Ubuntu&display=swap");
+  </style>
+  <!--icons, font awesome kit-->
+  <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- header starts -->
+  <header>
+    <div class="navbar">
+      <div class="logo-and-nav">
+        <div class="burger-and-logo">
+          <!-- hamburger menu starts -->
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- hamburger menu ends -->
+          <!-- logo starts -->
+          <a class="logo" href="../">
+            <img class="logo-img" src="../images/wwt_logo_circle.png" alt="wwt-logo" />
+            <div class="logo-text">
+              <span>WWT</span><br />
+              <span>WORLD WIDE TRANSLATIONS</span>
             </div>
-            <!-- hamburger menu ends -->
-            <!-- logo starts -->
-            <a class="logo" href="../">
-              <img
-                class="logo-img"
-                src="../images/wwt_logo_circle.png"
-                alt="wwt-logo"
-              />
-              <div class="logo-text">
-                <span>WWT</span><br />
-                <span>WORLD WIDE TRANSLATIONS</span>
-              </div>
-            </a>
-            <!-- logo ends -->
-          </div>
-
-          <!-- navigation starts -->
-          <nav>
-            <ul class="nav-ul">
-              <li class="nav-link">
-                <a href="find-translator.html">Find Translators</a>
-              </li>
-              <li class="nav-link">
-                <a href="become_translator.html">Become a Translator</a>
-              </li>
-              <li class="nav-link">
-                <a href="my_translation_page.html">My Translations</a>
-              </li>
-              <li class="nav-link">
-                <a href="about_us_page.html">About Us</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- navigation ends -->
-        </div>
-        <div class="navbar-buttons">
-          <a id="login" href="login.html">Login</a>
-        </div>
-      </div>
-    </header>
-    <!-- header ends -->
-
-    <!--container1 section-->
-    <div class="container1">
-      <div class="signup-info-section">
-        <!--title-->
-        <div class="title">
-          <h1>Sign Up</h1>
-        </div>
-        <!--continue with google account section-->
-        <div class="google-account">
-          <!--google icon-->
-          <a href="#"><i class="fa-brands fa-google"></i></a>
-          <!--google icon information-->
-          <a href="#">
-            <p><u>Continue with Google account</u></p>
           </a>
+          <!-- logo ends -->
         </div>
-        <!--inputs section-->
-        <form id="form" action="./my_translation_page.html" method="get">
-          <div class="input-center"><input type="text" id="userName" /></div>
-          <br />
-          <div class="input-center"><input type="email" id="email" /></div>
-          <br />
-          <div class="input-center">
-            <input type="password" id="password" />
-          </div>
-          <br />
-          <div class="input-center">
-            <input type="password" id="passwordConfirm" />
-          </div>
-          <br />
 
-          <!--I agree statement-->
-          <div class="agreement-text">
-            <input type="checkbox" id="agreement-checkbox" />
-            <label for="agreement-checkbox"
-              >I agree with terms of use and privacy</label
-            >
-          </div>
-
-          <br />
-          <!--SignUp Button-->
-          <div class="Button">
-            <a href="#" id="submit">SIGN UP</a>
-          </div>
-        </form>
-        <!--Already have an acoount text-->
-        <div class="login-text">
-          <p>Already have an account?</p>
-          <a href="login.html"><u> Login</u></a>
-        </div>
+        <!-- navigation starts -->
+        <nav>
+          <ul class="nav-ul">
+            <li class="nav-link">
+              <a href="find-translator.html">Find Translators</a>
+            </li>
+            <li class="nav-link">
+              <a href="become_translator.html">Become a Translator</a>
+            </li>
+            <li class="nav-link">
+              <a href="my_translation_page.html">My Translations</a>
+            </li>
+            <li class="nav-link">
+              <a href="about_us_page.html">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation ends -->
       </div>
-      <!--image-->
-      <div class="image-section">
-        <img
-          src="../images/signup-illustration.png"
-          alt="signup"
-          class="picture"
-        />
+      <div class="navbar-buttons">
+        <a id="login" href="login.html">Login</a>
       </div>
     </div>
+  </header>
+  <!-- header ends -->
 
-    <!-- footer starts -->
-    <footer>
-      <div class="logo-and-footer">
-        <!-- footer logo -->
-        <div class="footer-logo">
-          <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
-          <p>All Rights Reserved © 2022</p>
+  <!--container1 section-->
+  <div class="container1">
+    <div class="signup-info-section">
+      <!--title-->
+      <div class="title">
+        <h1>Sign Up</h1>
+      </div>
+      <!--continue with google account section-->
+      <div class="google-account">
+        <!--google icon-->
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <!--google icon information-->
+        <a href="#">
+          <p><u>Continue with Google account</u></p>
+        </a>
+      </div>
+      <!--inputs section-->
+      <form id="form" action="./my_translation_page.html" method="get">
+        <div class="input-center"><input type="text" id="userName" /></div>
+        <br />
+        <div class="input-center"><input type="email" id="email" /></div>
+        <br />
+        <div class="input-center">
+          <input type="password" id="password" />
         </div>
-        <!--Categories section-->
-        <div class="footer-links">
-          <ul>
-            <li>
-              <h5>CATEGORIES</h5>
-            </li>
-            <li><a href="find-translator.html">Find Translators</a></li>
-            <li><a href="become_translator.html">Become a Translator</a></li>
-            <li><a href="../">Features</a></li>
-          </ul>
+        <br />
+        <div class="input-center">
+          <input type="password" id="passwordConfirm" />
+        </div>
+        <br />
+
+        <!--I agree statement-->
+        <div class="agreement-text">
+          <input type="checkbox" id="agreement-checkbox" />
+          <label for="agreement-checkbox">I agree with terms of use and privacy</label>
         </div>
 
-        <!--Contact section-->
-        <div class="footer-links">
-          <ul>
-            <li>
-              <h5>CONTACT</h5>
-            </li>
-            <li><a href="about_us_page.html">About Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
+        <br />
+        <!--SignUp Button-->
+        <div class="Button">
+          <a href="#" id="submit">Sign Up</a>
         </div>
+      </form>
+      <!--Already have an acoount text-->
+      <div class="login-text">
+        <p>Already have an account?</p>
+        <a href="login.html"><u> Login</u></a>
+      </div>
+    </div>
+    <!--image-->
+    <div class="image-section">
+      <img src="../images/signup-illustration.png" alt="signup" class="picture" />
+    </div>
+  </div>
 
-        <!--Follow Us section-->
-        <div class="follow-us">
-          <h5>FOLLOW US</h5>
-          <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
-          <div class="members">
-            <a href="https://github.com/Muqadasa-Sherani" target="blank"
-              >Muqadasa Sherani</a
-            >
+  <!-- footer starts -->
+  <footer>
+    <div class="logo-and-footer">
+      <!-- footer logo -->
+      <div class="footer-logo">
+        <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
+        <p>All Rights Reserved © 2022</p>
+      </div>
+      <!--Categories section-->
+      <div class="footer-links">
+        <ul>
+          <li>
+            <h5>CATEGORIES</h5>
+          </li>
+          <li><a href="find-translator.html">Find Translators</a></li>
+          <li><a href="become_translator.html">Become a Translator</a></li>
+          <li><a href="../">Features</a></li>
+        </ul>
+      </div>
 
-            <a href="https://github.com/snnehir" target="blank"
-              >Sümeyye Nur Nehir
-            </a>
-          </div>
+      <!--Contact section-->
+      <div class="footer-links">
+        <ul>
+          <li>
+            <h5>CONTACT</h5>
+          </li>
+          <li><a href="about_us_page.html">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+
+      <!--Follow Us section-->
+      <div class="follow-us">
+        <h5>FOLLOW US</h5>
+        <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
+        <div class="members">
+          <a href="https://github.com/Muqadasa-Sherani" target="blank">Muqadasa Sherani</a>
+
+          <a href="https://github.com/snnehir" target="blank">Sümeyye Nur Nehir
+          </a>
         </div>
       </div>
-    </footer>
-    <!-- footer ends -->
-  </body>
+    </div>
+  </footer>
+  <!-- footer ends -->
+</body>
+
 </html>

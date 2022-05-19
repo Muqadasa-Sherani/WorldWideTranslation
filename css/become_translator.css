@@ -1,6 +1,3 @@
-/*{
-    font-family: 'Baloo 2', cursive;
-} */
 #resume {
     display: none;
 }
@@ -81,10 +78,14 @@ img {
 }
 
 h2, p{
-    color: #116466;
     text-align: center;
 }
-
+h3, p{
+    color: #116466;
+}
+h3{
+    margin-left: 20px;
+}
 
 @media only screen and (max-width: 1230px) {
     form {
@@ -139,8 +140,8 @@ h2, p{
     }
 
     .accept-terms,
-    #submit-btn {
-        margin: 5px 0;
+    #submit-btn, h3 {
+        margin: 5px;
     }
 
     .file-grp {

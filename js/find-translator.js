@@ -31,5 +31,9 @@ $(document).ready(function(){
   // jQuery rating widget is used for displaying stars. Disabled is true for displaying static ratings (no hover-click effect)
   $(".rating").jqxRating({ width: 100, height: 35, disabled: true, value:4 });
   $(".jqx-rating-image-default, .jqx-rating-image-backward").css("cursor", "default")
-
+  $(".result-area").css("visibility", "hidden")
+  $("#search-btn").click(function(){
+    $(".result-area").css("visibility", "visible")
+     $(".result-area").hide().fadeIn(300)
+  })
 });

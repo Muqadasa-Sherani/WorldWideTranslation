@@ -6,7 +6,7 @@ body {
 }
 
 /*Container starts*/
-.container{
+.container {
   width: 80%;
   margin: auto;
 }
@@ -26,26 +26,28 @@ body {
 
 .paragraph-box1 {
   padding-right: 50px;
+}
+
+.paragraph-box1 p {
   text-align: justify;
 }
 
-span{
+span {
   color: #116466;
 }
 
-.box2{
+.box2 {
   position: relative;
   margin-top: 15%;
 }
 
-.picture-left{
+.picture-left {
   float: left;
- padding: 0 20px 20px 0;
- width: 30%;
+  padding: 0 40px 20px 0;
+  width: 30%;
 }
 
-.paragraph-box2{
-  padding-left: 50px;
+.paragraph-box2 p {
   text-align: justify;
 }
 
@@ -66,22 +68,26 @@ span{
 .email-button {
   display: flex;
   width: 50%;
-    margin: auto;
+  margin: auto;
   /*justify-content: center;  separate elements horizontally */
-  align-items: center; /* center vertically */
+  align-items: center;
+  /* center vertically */
 }
 
-#email{
+#email {
   padding: 5px 5px;
   width: 100%;
   outline: none;
+  border: 1px solid #11656667;
+  border-radius: 3px;
 }
 
 #send-button {
   color: white;
   background-color: #ffa352;
   font-size: 17px;
-  padding:6px 25px; /*15px 35px;*/
+  padding: 5px 25px;
+  /*15px 35px;*/
   border-radius: 5px;
   margin-left: 10px;
   border: none;
@@ -93,20 +99,29 @@ span{
   width: 50%;
   margin: auto;
   margin-top: 10px;
-  outline: none;
+}
+
+#comment{
+    outline: none;
+    border: 1px solid #11656667;
+    border-radius: 3px;
 }
 
 @media screen and (max-width: 600px) {
-  .picture-right, .picture-left{
+
+  .picture-right,
+  .picture-left {
     display: none;
   }
 
-  .paragraph-box1, .paragraph-box2{
+  .paragraph-box1,
+  .paragraph-box2 {
     padding-right: 0px;
     padding-left: 0px;
   }
 
-  .text-area, .email-button{
+  .text-area,
+  .email-button {
     width: 100%;
   }
 }

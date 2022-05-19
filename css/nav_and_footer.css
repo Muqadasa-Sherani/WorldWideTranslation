@@ -1,5 +1,7 @@
 /* COMMON STYLES */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Josefin Sans", sans-serif;
   background-color: #efefef;

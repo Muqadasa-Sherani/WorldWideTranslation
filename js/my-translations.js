@@ -7,7 +7,7 @@ $(document).ready(function () {
    const child_num = document.getElementById("translations").children.length
    $("#translations").children().each(function (index) {
       if (index < child_num)
-        $(this).hide().delay(200 * index).fadeIn();
+        $(this).hide().delay(300 * index).fadeIn(300);
    });
    async function show_after(){
       await sleep(1000) // wait a second for content

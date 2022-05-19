@@ -66,9 +66,7 @@
             <li class="nav-link">
               <a href="become_translator.html">Become a Translator</a>
             </li>
-            <li class="nav-link">
-              <a href="my_translation_page.html">My Translations</a>
-            </li>
+            <!-- my translation page cannot be accessed in login or signup -->
             <li class="nav-link">
               <a href="about_us_page.html">About Us</a>
             </li>
@@ -83,7 +81,7 @@
     </div>
   </header>
   <!-- header ends -->
-  <!-- modal starts here. auto: false -->
+  <!-- modal starts here. -->
   <div id="dialog-form" title="Order Translation">
 
     <form action="my_translation_page.html">
@@ -97,9 +95,9 @@
         <label for="name">Name on Card</label>
         <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" required>
 
-        <label for="email">Card Number</label>
-        <input type="text" name="card-number" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX"
-          class="text ui-widget-content ui-corner-all" pattern="[0-9]{16}" required>
+        <label for="card-number">Card Number</label>
+        <input type="number" name="card-number" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX"
+          class="text ui-widget-content ui-corner-all" required>
 
         <label for="cvv">CVV</label>
         <input type="text" name="cvv" id="cvv" class="text ui-widget-content ui-corner-all" pattern="[0-9]{3}" required>
@@ -109,10 +107,7 @@
           pattern="[0-9]{2}\/[0-9]{2}" placeholder="MM/YY" required>
         <!-- Allow form submission with keyboard without duplicating the dialog button -->
         <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-
-        <!-- TODO: Master Card - Visa -->
-        <!-- Input Validation -->
-        <!-- Style inputs -->
+        <span class="validation-error">Please fill all fields. </span>
       </fieldset>
     </form>
   </div>

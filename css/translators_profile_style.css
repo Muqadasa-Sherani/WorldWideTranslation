@@ -94,11 +94,10 @@ h3 {
   text-align: center;
   font-size: 14px;
   padding: 8px;
-  background-color: #116466;
+  background-color: #ff9736;
   color: white;
   cursor: pointer;
   border-radius: 5px;
-  border: 1px solid #ffd4ab;
   margin-bottom: 20px;
 }
 
@@ -106,15 +105,45 @@ h3 {
   font-size: 12px;
   margin-left: 5px;
 }
-label,
-input {
+.validation-error{
+  font-size: 12px;
+  font-style: italic;
+  color: #94a29e;
+}
+
+label, input {
   display: block;
 }
 
 input.text {
   margin-bottom: 12px;
   width: 95%;
-  padding: .4em;
+  padding: .4rem;
+  outline: none;
+
+}
+.confirm-btn{
+  background-color: #ff9736 !important;
+  color: white !important;
+}
+.confirm-btn:hover{
+  background-color: #ff830e !important;
+}
+.cancel-btn:hover{
+  background-color: #116466 !important;
+  color: white !important;
+}
+.ui-dialog-buttonpane{
+  border: none !important;
+  background-color: #e9fffe !important;
+}
+.ui-dialog{
+  background-color: #e9fffe !important;
+}
+.ui-dialog-titlebar{
+  padding: 0px;
+  background-color: #ff9736 !important;
+  color: white !important;
 }
 
 fieldset {
@@ -128,7 +157,7 @@ fieldset {
 }
 .price-active{
   display: block;
-  margin-top: -0px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 .validateTips {
@@ -136,7 +165,7 @@ fieldset {
   padding: 0.3em;
 }
 
-input[type=text]::placeholder {
+input[type=text]::placeholder, input[type=number]::placeholder {
   opacity: 0.3;
   font-weight: lighter;
   letter-spacing: 1px;

@@ -44,6 +44,54 @@ form{
     margin: auto;
 }
 
+#pswd_info {
+    position: absolute;
+    bottom:-75px;
+    bottom: -115px\9; /* IE Specific */
+    right:55px;
+    width:200px;
+    padding:15px;
+    background:#ff9736b1;
+    font-size:.875em;
+    border-radius:5px;
+    box-shadow:0 1px 3px #ccc;
+    border:1px solid #ddd;
+
+    display: none;
+}
+
+#pswd_info h4 {
+    margin:0 0 10px 0;
+    padding:0;
+    font-weight:normal;
+}
+
+/*we use ::before selector to add an “up-pointing triangle” to the dialog box*/
+#pswd_info::before {
+    content: "\25B2";
+    position:absolute;
+    top:-12px;
+    left:45%;
+    font-size:14px;
+    line-height:14px;
+    color:rgb(143, 139, 139);
+    text-shadow:none;
+    display:block;
+}
+
+.invalid {
+    background:url(../images/cross.png) no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#ec3f41;
+}
+.valid {
+    background:url(../images/tick.png) no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#3a7d34;
+}
+
 .agreement-text{
     display: flex;
     align-items: center;

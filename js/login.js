@@ -1,20 +1,20 @@
 $(document).ready(function(){
-    // Create jqxInput.
+    // Create jqxInput username.
     $("#username").jqxInput({
         placeHolder: "Username",
         height: 30,
         width: 250,
         minLength: 1,
       });
-    // Create jqxPasswordInput.
-    $("#password").jqxPasswordInput({ 
+    // Create jqxInput password.
+    $("#password").jqxInput({ 
         placeHolder: "Enter your password...", 
         width: 250, 
         height: 30,
         minLength: 1,
     });
 
-    // Validate the Form.
+    //creating a fake account.
     $("#submit").click(function () {
         const user = "Admin";
         const pass = "admin123";
@@ -22,7 +22,7 @@ $(document).ready(function(){
             location.href = "../html/my_translation_page.html";
         }
         else{
-            alert("wtf");
+            alert("Incorrect username or password.");
         }
     });    
 });

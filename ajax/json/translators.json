@@ -1,0 +1,84 @@
+{
+    "translators": [
+        {
+            "fullname": "Betsy Smith",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?",
+            "image": "../images/translators/betsy.jpg",
+            "price": 0.45,
+            "time": 13,
+            "rating": 5,
+            "languages": [
+                "English",
+                "Turkish",
+                "Korean"
+            ]
+        },
+        {
+            "fullname": "Jade Holland",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?",
+            "image": "../images/translators/jade.jpg",
+            "price": 0.35,
+            "time": 12,
+            "rating": 5,
+            "languages": [
+                "English",
+                "Arabic"
+            ]
+        },
+        {
+            "fullname": "Fiza Griffin",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?",
+            "image": "../images/translators/fiza.jpg",
+            "price": 0.25,
+            "time": 20,
+            "rating": 3,
+            "languages": [
+                "English",
+                "Pashto",
+                "Arabic",
+                "Spanish"
+            ]
+        },
+        {
+            "fullname": "John Devi",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit? Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "image": "../images/translators/john.jpg",
+            "price": 0.25,
+            "time": 12,
+            "rating": 4,
+            "languages": [
+                "Korean",
+                "Pashto",
+                "Spanish"
+            ]
+        },
+        {
+            "fullname": "Andrew Brown",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?",
+            "image": "../images/translators/andrew.jpg",
+            "price": 0.43,
+            "time": 10,
+            "rating": 5,
+            "languages": [
+                "English",
+                "Turkish",
+                "Arabic",
+                "Spanish",
+                "Korean"
+            ]
+        },
+        {
+            "fullname": "Lia Huang",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?",
+            "image": "../images/translators/lia.jpg",
+            "price": 0.35,
+            "time": 20,
+            "rating": 4,
+            "languages": [
+                "English",
+                "Korean",
+                "Turkish"
+            ]
+        }
+    ]
+}

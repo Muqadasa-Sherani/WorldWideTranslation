@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     //creating a fake account.
     $("#submit").click(function () {
-        const user = "Admin";
+        const user = "admin";
         const pass = "admin123";
         if($("#username").val() == user && $("#password").val() == pass){
             location.href = "../html/my_translation_page.html";

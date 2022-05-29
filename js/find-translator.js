@@ -1,8 +1,5 @@
-/* $(document).ready(function () {
-  // jQuery rating widget is used for displaying stars. Disabled is true for displaying static ratings (no hover-click effect)
-  $(".rating").jqxRating({ width: 100, height: 35, disabled: true, value: 4 });
-  $(".jqx-rating-image-default, .jqx-rating-image-backward").css("cursor", "default")
-}); */
+
+/*READ MORE JQUERY */
 function readMore() {
     var showCharacter = 200;
     var moretext = "Read More";

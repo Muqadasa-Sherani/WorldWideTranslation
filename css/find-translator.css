@@ -100,7 +100,14 @@ select:focus, input:focus{
     margin: auto;
     /* center horizontally */
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 355px;
+}
+.result{
+    color: #116566c1;
+    padding-bottom: 25px;
+}
+.morelink{
+    color: #116466;
 }
 
 /* profile class has 2 divs: profile-content (information about translator) and side-content (price - time) */
@@ -198,7 +205,9 @@ select:focus, input:focus{
 .read-more .morecontent div {
     display: none;
 }
-
+.read-more{
+    color: #424242;    
+}
 #rating>div {
     margin-right: 3px;
 }

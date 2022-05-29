@@ -1,332 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Translator's Profile</title>
-    <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
-    <link rel="stylesheet" href="../css/nav_and_footer.css" />
-    <link rel="stylesheet" href="../css/translators_profile_style.css" />
 
-    <!--icons, font awesome kit-->
-    <script
-      src="https://kit.fontawesome.com/f18ebfae9b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../jquery/jquery-ui.css" />
-    <script src="../jquery/jQuery.js"></script>
-    <script src="../jquery/jquery-ui.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Translator's Profile</title>
+  <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
+  <link rel="stylesheet" href="../css/nav_and_footer.css" />
+  <link rel="stylesheet" href="../css/translators_profile_style.css" />
 
-    <!-- START: star jquery widget -->
-    <link
-      rel="stylesheet"
-      href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css"
-      type="text/css"
-    />
-    <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"></script>
-    <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxrating.js"></script>
-    <!-- END: star widget -->
+  <!--icons, font awesome kit-->
+  <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../jquery/jquery-ui.css" />
+  <script src="../jquery/jQuery.js"></script>
+  <script src="../jquery/jquery-ui.js"></script>
 
-    <!--javascript file for expandable paragraph jquery plugin-->
-    <script src="../js/find-translator.js"></script>
-    <script src="../js/payment.js"></script>
-    <script src="../js/translators-profile.js"></script>
-    <!--javascript file for navagation bar for jquery plugin-->
-    <script src="../js/nav-bar.js"></script>
-  </head>
+  <!-- START: star jquery widget -->
+  <link rel="stylesheet" href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css" type="text/css" />
+  <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"></script>
+  <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxrating.js"></script>
+  <!-- END: star widget -->
 
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="logo-and-nav">
-          <div class="burger-and-logo">
-            <!-- hamburger menu starts -->
-            <div class="burger">
-              <span></span>
-              <span></span>
-              <span></span>
+  <!--javascript file for expandable paragraph jquery plugin-->
+  <script src="../js/find-translator.js"></script>
+  <script src="../js/payment.js"></script>
+  <script src="../js/translators-profile.js"></script>
+  <!--javascript file for navagation bar for jquery plugin-->
+  <script src="../js/nav-bar.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-and-nav">
+        <div class="burger-and-logo">
+          <!-- hamburger menu starts -->
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- hamburger menu ends -->
+          <!-- logo starts -->
+          <a class="logo" href="../">
+            <img class="logo-img" src="../images/wwt_logo_circle.png" alt="wwt-logo" />
+            <div class="logo-text">
+              <span>WWT</span><br />
+              <span>WORLD WIDE TRANSLATIONS</span>
             </div>
-            <!-- hamburger menu ends -->
-            <!-- logo starts -->
-            <a class="logo" href="../">
-              <img
-                class="logo-img"
-                src="../images/wwt_logo_circle.png"
-                alt="wwt-logo"
-              />
-              <div class="logo-text">
-                <span>WWT</span><br />
-                <span>WORLD WIDE TRANSLATIONS</span>
-              </div>
-            </a>
-            <!-- logo ends -->
-          </div>
-
-          <!-- navigation starts -->
-          <nav>
-            <ul class="nav-ul">
-              <li class="nav-link">
-                <a href="find-translator.html">Find Translators</a>
-              </li>
-              <li class="nav-link">
-                <a href="become_translator.html">Become a Translator</a>
-              </li>
-              <!-- my translation page cannot be accessed in login or signup -->
-              <li class="nav-link">
-                <a href="about_us_page.html">About Us</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- navigation ends -->
-        </div>
-        <div class="navbar-buttons">
-          <a id="signup" href="signup.html">Sign Up</a>
-          <a id="login" href="login.html">Login</a>
-        </div>
-      </div>
-    </header>
-    <!-- header ends -->
-    <!-- modal starts here. -->
-    <div id="dialog-form" title="Order Translation">
-      <form action="my_translation_page.html">
-        <fieldset>
-          <div class="file-grp">
-            <input
-              type="file"
-              id="resume"
-              accept=".txt, .docx, application/msword"
-              required
-            />
-            <label id="resume-label" for="resume">Upload Your File</label>
-            <span id="selected-file">You did not choose any file.</span>
-          </div>
-          <h4 class="price">Cost of your file: 50$</h4>
-          <label for="name">Name on Card</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="text ui-widget-content ui-corner-all"
-            required
-          />
-
-          <label for="card-number">Card Number</label>
-          <input
-            type="number"
-            name="card-number"
-            id="card-number"
-            placeholder="XXXX-XXXX-XXXX-XXXX"
-            class="text ui-widget-content ui-corner-all"
-            required
-          />
-
-          <label for="cvv">CVV</label>
-          <input
-            type="text"
-            name="cvv"
-            id="cvv"
-            class="text ui-widget-content ui-corner-all"
-            pattern="[0-9]{3}"
-            required
-          />
-
-          <label for="expiration-date">Expiration Date</label>
-          <input
-            type="text"
-            name="expiration-date"
-            id="expiration-date"
-            class="text ui-widget-content ui-corner-all"
-            pattern="[0-9]{2}\/[0-9]{2}"
-            placeholder="MM/YY"
-            required
-          />
-          <!-- Allow form submission with keyboard without duplicating the dialog button -->
-          <input
-            type="submit"
-            tabindex="-1"
-            style="position: absolute; top: -1000px"
-          />
-          <span class="validation-error">Please fill all fields. </span>
-        </fieldset>
-      </form>
-    </div>
-    <!-- profile section starts -->
-    <div class="profile-section">
-      <!--profile image section-->
-      <div class="profile-image">
-        <img
-          id="profile-image-id"
-          src="../images/translators/user4.jpg"
-          alt="profile_pic"
-        />
-      </div>
-      <!--profile name and description section-->
-      <div class="profile-name">
-        <h1>Robert Smith</h1>
-        <h4>Certified English translator with 13 years of experience.</h4>
-      </div>
-      <!--Profile price box section-->
-      <div class="profile-price-box">
-        <div class="inside-price-box">
-          <h4>Per Word:</h4>
-          <h1><u>$0.10</u></h1>
+          </a>
+          <!-- logo ends -->
         </div>
 
-        <a id="send-btn" href="#">Send File</a>
-      </div>
-    </div>
-    <!-- profile section ends -->
-
-    <!--About the translator section starts-->
-    <div class="about-translator-section general-section-style">
-      <h3><u>About the translator</u></h3>
-      <br />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-        amet lorem est. Sed hendrerit turpis felis, tempus pellentesque risus
-        porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at velit
-        tristique, lacinia enim posuere, imperdiet lectus. Ut non tincidunt
-        ipsum. Pellentesque fermentum blandit tellus a efficitur. Pellentesque
-        vehicula eget ipsum vel scelerisque. Maecenas efficitur urna non orci
-        bibendum tempus. Nullam pulvinar massa suscipit tortor euismod
-        dignissim. Donec vel ultrices ligula. Mauris laoreet pulvinar laoreet.
-        Etiam vitae quam at erat tempor faucibus sed vitae risus. Ut vitae
-        faucibus mauris. Donec sit amet maximus ex, a faucibus mi.
-      </p>
-    </div>
-    <!--About the translator section ends-->
-
-    <!--Resume section starts-->
-    <div class="resume-section general-section-style">
-      <h3><u>Resume</u></h3>
-      <br />
-      <h4>Education:</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-        amet lorem est. Sed hendrerit turpis felis, tempus pellentesque risus
-        porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at velit
-        tristique, lacinia enim posuere, imperdiet lectus. Ut non tincidunt
-        ipsum. Pellentesque fermentum blandit tellus a efficitur.
-      </p>
-      <br />
-      <h4>Certificates:</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-        amet lorem est. Sed hendrerit turpis felis, tempus pellentesque risus
-        porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at velit
-        tristique, lacinia enim posuere, imperdiet lectus.
-      </p>
-      <br />
-      <h4>Experience:</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
-        amet lorem est. Sed hendrerit turpis felis, tempus pellentesque risus
-        porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at velit
-        tristique, lacinia enim posuere, imperdiet lectus. Ut non tincidunt
-        ipsum. Pellentesque fermentum blandit tellus a efficitur. Ut non
-        tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur. Ut
-        non tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
-      </p>
-      <br />
-    </div>
-    <!--Resume section ends-->
-
-    <!--Customer comments section starts-->
-    <div class="customer-comments-section general-section-style">
-      <h3><u>Customer Comments</u></h3>
-      <div class="customer-profile-section">
-        <div class="customer-pic">
-          <img
-            class="customer-pic-id"
-            src="../images/customers/customer_pic.jpg"
-            alt="customer"
-          />
-          <div class="rating"></div>
-        </div>
-        <div class="customer-comment">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            sit amet lorem est. Sed hendrerit turpis felis, tempus pellentesque
-            risus porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at
-            velit tristique, lacinia enim posuere, imperdiet lectus. Ut non
-            tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
-          </p>
-        </div>
-      </div>
-      <div class="customer-profile-section">
-        <div class="customer-pic">
-          <img
-            class="customer-pic-id"
-            src="../images/customers/customer_pic2.jpg"
-            alt="customer"
-          />
-          <div class="rating"></div>
-        </div>
-        <div class="customer-comment">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            sit amet lorem est. Sed hendrerit turpis felis, tempus pellentesque
-            risus porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at
-            velit tristique, lacinia enim posuere, imperdiet lectus. Ut non
-            tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--Customer comments section ends-->
-
-    <!-- footer starts -->
-    <footer>
-      <div class="logo-and-footer">
-        <!-- footer logo -->
-        <div class="footer-logo">
-          <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
-          <p>All Rights Reserved © 2022</p>
-        </div>
-
-        <!--Categories section-->
-        <div class="footer-links">
-          <ul>
-            <li>
-              <h5>CATEGORIES</h5>
+        <!-- navigation starts -->
+        <nav>
+          <ul class="nav-ul">
+            <li class="nav-link">
+              <a href="find-translator.html">Find Translators</a>
             </li>
-            <li><a href="find-translator.html">Find Translators</a></li>
-            <li><a href="become_translator.html">Become a Translator</a></li>
-            <li><a href="../">Features</a></li>
-          </ul>
-        </div>
-
-        <!--Contact section-->
-        <div class="footer-links">
-          <ul>
-            <li>
-              <h5>CONTACT</h5>
+            <li class="nav-link">
+              <a href="become_translator.html">Become a Translator</a>
             </li>
-            <li><a href="about_us_page.html">About Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Help</a></li>
+            <!-- my translation page cannot be accessed in login or signup -->
+            <li class="nav-link">
+              <a href="about_us_page.html">About Us</a>
+            </li>
           </ul>
+        </nav>
+        <!-- navigation ends -->
+      </div>
+      <div class="navbar-buttons">
+        <a id="signup" href="signup.html">Sign Up</a>
+        <a id="login" href="login.html">Login</a>
+      </div>
+    </div>
+  </header>
+  <!-- header ends -->
+  <!-- modal starts here. -->
+  <div id="dialog-form" title="Order Translation">
+    <form action="my_translation_page.html">
+      <fieldset>
+        <div class="file-grp">
+          <input type="file" id="resume" accept=".txt, .docx, application/msword" required />
+          <label id="resume-label" for="resume">Upload Your File</label>
+          <span id="selected-file">You did not choose any file.</span>
         </div>
+        <h4 class="price">Cost of your file: 50$</h4>
+        <label for="name">Name on Card</label>
+        <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" required />
 
-        <!--Follow Us section-->
-        <div class="follow-us">
-          <h5>FOLLOW US</h5>
-          <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
-          <div class="members">
-            <a href="https://github.com/Muqadasa-Sherani" target="blank"
-              >Muqadasa Sherani</a
-            >
+        <label for="card-number">Card Number</label>
+        <input type="number" name="card-number" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX"
+          class="text ui-widget-content ui-corner-all" required />
 
-            <a href="https://github.com/snnehir" target="blank"
-              >Sümeyye Nur Nehir
-            </a>
-          </div>
+        <label for="cvv">CVV</label>
+        <input type="text" name="cvv" id="cvv" class="text ui-widget-content ui-corner-all" pattern="[0-9]{3}"
+          required />
+
+        <label for="expiration-date">Expiration Date</label>
+        <input type="text" name="expiration-date" id="expiration-date" class="text ui-widget-content ui-corner-all"
+          pattern="[0-9]{2}\/[0-9]{2}" placeholder="MM/YY" required />
+        <!-- Allow form submission with keyboard without duplicating the dialog button -->
+        <input type="submit" tabindex="-1" style="position: absolute; top: -1000px" />
+        <span class="validation-error">Please fill all fields. </span>
+      </fieldset>
+    </form>
+  </div>
+  <!-- profile section starts -->
+  <div class="profile-section">
+    <!--profile image section-->
+    <div class="profile-image">
+      <img id="profile-image-id" src="../images/translators/betsy.jpg" alt="profile_pic" />
+    </div>
+    <!--profile name and description section-->
+    <div class="profile-name">
+      <h1>Betsy Smith</h1>
+      <h4>Certified English translator with 13 years of experience.</h4>
+    </div>
+    <!--Profile price box section-->
+    <div class="profile-price-box">
+      <div class="inside-price-box">
+        <h4>Per Word:</h4>
+        <h1><u>$0.42</u></h1>
+      </div>
+
+      <a id="send-btn" href="#">Send File</a>
+    </div>
+  </div>
+  <!-- profile section ends -->
+
+  <!--About the translator section starts-->
+  <div class="about-translator-section general-section-style">
+    <h3><u>About the translator</u></h3>
+    <br />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+      amet lorem est. Sed hendrerit turpis felis, tempus pellentesque risus
+      porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at velit
+      tristique, lacinia enim posuere, imperdiet lectus. Ut non tincidunt
+      ipsum. Pellentesque fermentum blandit tellus a efficitur. Pellentesque
+      vehicula eget ipsum vel scelerisque. Maecenas efficitur urna non orci
+      bibendum tempus. Nullam pulvinar massa suscipit tortor euismod
+      dignissim. Donec vel ultrices ligula. Mauris laoreet pulvinar laoreet.
+      Etiam vitae quam at erat tempor faucibus sed vitae risus. Ut vitae
+      faucibus mauris. Donec sit amet maximus ex, a faucibus mi.
+    </p>
+  </div>
+  <!--About the translator section ends-->
+
+  <!--Resume section starts-->
+  <div class="resume-section general-section-style">
+    <h3><u>Resume</u></h3>
+    <br />
+    <h4>Education:</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+      amet lorem est. Sed hendrerit turpis felis, tempus pellentesque risus
+      porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at velit
+      tristique, lacinia enim posuere, imperdiet lectus. Ut non tincidunt
+      ipsum. Pellentesque fermentum blandit tellus a efficitur.
+    </p>
+    <br />
+    <h4>Certificates:</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+      amet lorem est. Sed hendrerit turpis felis, tempus pellentesque risus
+      porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at velit
+      tristique, lacinia enim posuere, imperdiet lectus.
+    </p>
+    <br />
+    <h4>Experience:</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit
+      amet lorem est. Sed hendrerit turpis felis, tempus pellentesque risus
+      porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at velit
+      tristique, lacinia enim posuere, imperdiet lectus. Ut non tincidunt
+      ipsum. Pellentesque fermentum blandit tellus a efficitur. Ut non
+      tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur. Ut
+      non tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
+    </p>
+    <br />
+  </div>
+  <!--Resume section ends-->
+
+  <!--Customer comments section starts-->
+  <div class="customer-comments-section general-section-style">
+    <h3><u>Customer Comments</u></h3>
+    <div class="customer-profile-section">
+      <div class="customer-pic">
+        <img class="customer-pic-id" src="../images/customers/customer_pic.jpg" alt="customer" />
+        <div class="rating"></div>
+      </div>
+      <div class="customer-comment">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          sit amet lorem est. Sed hendrerit turpis felis, tempus pellentesque
+          risus porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at
+          velit tristique, lacinia enim posuere, imperdiet lectus. Ut non
+          tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
+        </p>
+      </div>
+    </div>
+    <div class="customer-profile-section">
+      <div class="customer-pic">
+        <img class="customer-pic-id" src="../images/customers/customer_pic2.jpg" alt="customer" />
+        <div class="rating"></div>
+      </div>
+      <div class="customer-comment">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          sit amet lorem est. Sed hendrerit turpis felis, tempus pellentesque
+          risus porta vel. Vivamus vestibulum ornare tincidunt. Curabitur at
+          velit tristique, lacinia enim posuere, imperdiet lectus. Ut non
+          tincidunt ipsum. Pellentesque fermentum blandit tellus a efficitur.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Customer comments section ends-->
+
+  <!-- footer starts -->
+  <footer>
+    <div class="logo-and-footer">
+      <!-- footer logo -->
+      <div class="footer-logo">
+        <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
+        <p>All Rights Reserved © 2022</p>
+      </div>
+
+      <!--Categories section-->
+      <div class="footer-links">
+        <ul>
+          <li>
+            <h5>CATEGORIES</h5>
+          </li>
+          <li><a href="find-translator.html">Find Translators</a></li>
+          <li><a href="become_translator.html">Become a Translator</a></li>
+          <li><a href="../">Features</a></li>
+        </ul>
+      </div>
+
+      <!--Contact section-->
+      <div class="footer-links">
+        <ul>
+          <li>
+            <h5>CONTACT</h5>
+          </li>
+          <li><a href="about_us_page.html">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+
+      <!--Follow Us section-->
+      <div class="follow-us">
+        <h5>FOLLOW US</h5>
+        <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
+        <div class="members">
+          <a href="https://github.com/Muqadasa-Sherani" target="blank">Muqadasa Sherani</a>
+
+          <a href="https://github.com/snnehir" target="blank">Sümeyye Nur Nehir
+          </a>
         </div>
       </div>
-    </footer>
-    <!-- footer ends -->
-  </body>
+    </div>
+  </footer>
+  <!-- footer ends -->
+</body>
+
 </html>

@@ -1,217 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Translations</title>
-    <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
-    <link rel="stylesheet" href="../css/nav_and_footer.css" />
-    <link rel="stylesheet" href="../css/my_translation_style.css" />
 
-    <!--icons, font awesome kit-->
-    <script
-      src="https://kit.fontawesome.com/f18ebfae9b.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- jqueryy plugin -->
-    <script src="../jquery/jQuery.js"></script>
-    <!-- START: star jquery widget -->
-    <link
-      rel="stylesheet"
-      href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css"
-      type="text/css"
-    />
-    <script src="../jquery/jqwidgets-ver14.0.0/scripts/jquery-1.11.1.min.js"></script>
-    <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"></script>
-    <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxrating.js"></script>
-    <!-- END: star widget -->
-    <script src="../js/nav-bar.js"></script>
-    <script src="../js/my-translations.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Translations</title>
+  <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
+  <link rel="stylesheet" href="../css/nav_and_footer.css" />
+  <link rel="stylesheet" href="../css/my_translation_style.css" />
 
-  <body>
-    <!-- before accessing my translations page the user must log in or sign up 
+  <!--icons, font awesome kit-->
+  <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
+  <!-- jqueryy plugin -->
+  <script src="../jquery/jQuery.js"></script>
+  <!-- START: star jquery widget -->
+  <link rel="stylesheet" href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css" type="text/css" />
+  <script src="../jquery/jqwidgets-ver14.0.0/scripts/jquery-1.11.1.min.js"></script>
+  <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"></script>
+  <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxrating.js"></script>
+  <!-- END: star widget -->
+  <script src="../js/nav-bar.js"></script>
+  <script src="../js/my-translations.js"></script>
+</head>
+
+<body>
+  <!-- before accessing my translations page the user must log in or sign up 
       so there is no need to display login-signup buttons in navbar 
   -->
-    <!-- header starts -->
-    <header>
-      <div class="navbar">
-        <div class="logo-and-nav">
-          <div class="burger-and-logo">
-            <!-- hamburger menu starts -->
-            <div class="burger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <!-- hamburger menu ends -->
-            <!-- logo starts -->
-            <a class="logo" href="../">
-              <img
-                class="logo-img"
-                src="../images/wwt_logo_circle.png"
-                alt="wwt-logo"
-              />
-              <div class="logo-text">
-                <span>WWT</span><br />
-                <span>WORLD WIDE TRANSLATIONS</span>
-              </div>
-            </a>
-            <!-- logo ends -->
+  <!-- header starts -->
+  <header>
+    <div class="navbar">
+      <div class="logo-and-nav">
+        <div class="burger-and-logo">
+          <!-- hamburger menu starts -->
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-
-          <!-- navigation starts -->
-          <nav>
-            <ul class="nav-ul">
-              <li class="nav-link">
-                <a href="find-translator.html">Find Translators</a>
-              </li>
-              <li class="nav-link">
-                <a href="become_translator.html">Become a Translator</a>
-              </li>
-              <li class="nav-link">
-                <a href="my_translation_page.html">My Translations</a>
-              </li>
-              <li class="nav-link">
-                <a href="about_us_page.html">About Us</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- navigation ends -->
+          <!-- hamburger menu ends -->
+          <!-- logo starts -->
+          <a class="logo" href="../">
+            <img class="logo-img" src="../images/wwt_logo_circle.png" alt="wwt-logo" />
+            <div class="logo-text">
+              <span>WWT</span><br />
+              <span>WORLD WIDE TRANSLATIONS</span>
+            </div>
+          </a>
+          <!-- logo ends -->
         </div>
-        <div class="profile-info">
-          <img src="../images/customers/timothee.png" alt="timothee" />
+
+        <!-- navigation starts -->
+        <nav>
+          <ul class="nav-ul">
+            <li class="nav-link">
+              <a href="find-translator.html">Find Translators</a>
+            </li>
+            <li class="nav-link">
+              <a href="become_translator.html">Become a Translator</a>
+            </li>
+            <li class="nav-link">
+              <a href="my_translation_page.html">My Translations</a>
+            </li>
+            <li class="nav-link">
+              <a href="about_us_page.html">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation ends -->
+      </div>
+      <div class="profile-info">
+        <img src="../images/customers/timothee.png" alt="timothee" />
+      </div>
+    </div>
+  </header>
+  <!-- header ends -->
+
+  <!--Container starts-->
+  <div class="container">
+    <!--search bar-->
+    <div class="search-container">
+      <input type="text" placeholder="Search.." name="search" id="search" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <div id="translations">
+      <!--completed/new translation files section-->
+      <h2><u>NEW</u></h2>
+      <div class="new-translation-container">
+        <div class="inside-box-text">
+          <h4>
+            Translation of your file "Ogrenci_belgesi.docx" is completed!
+          </h4>
+          <p>2 hours ago</p>
+        </div>
+        <div class="inside-box-buttons">
+          <a class="download-button" href="#">Download</a>
+          <div class="rate">
+            <span>Rate Translator</span>
+            <div id="rating_new"></div>
+          </div>
         </div>
       </div>
-    </header>
-    <!-- header ends -->
-
-    <!--Container starts-->
-    <div class="container">
-      <!--search bar-->
-      <div class="search-container">
-        <input type="text" placeholder="Search.." name="search" id="search" />
-        <button type="submit"><i class="fa fa-search"></i></button>
+      <!--Pending translation files section-->
+      <h2><u>PENDING</u></h2>
+      <div class="pending-translation-container">
+        <h4>Time remains for your file "pasport_belgesi.docx".</h4>
+        <p>2 days</p>
+        <h4><u>Report a Problem</u></h4>
       </div>
-      <div id="translations">
-        <!--completed/new translation files section-->
-        <h2><u>NEW</u></h2>
-        <div class="new-translation-container">
-          <div class="inside-box-text">
-            <h4>
-              Translation of your file "Ogrenci_belgesi.docx" is completed!
-            </h4>
-            <p>2 hours ago</p>
-          </div>
-          <div class="inside-box-buttons">
-            <a class="download-button" href="#">Download</a>
-            <div class="rate">
-              <span>Rate Translator</span>
-              <div id="rating_new"></div>
-            </div>
-          </div>
-        </div>
-        <!--Pending translation files section-->
-        <h2><u>PENDING</u></h2>
-        <div class="pending-translation-container">
-          <h4>Time remains for your file "pasport_belgesi.docx".</h4>
-          <p>2 days</p>
-          <h4><u>Report a Problem</u></h4>
-        </div>
-        <div class="pending-translation-container">
-          <h4>Time remains for your file "kimlik_belgesi.docx".</h4>
-          <p>3 days</p>
+      <div class="pending-translation-container">
+        <h4>Time remains for your file "kimlik_belgesi.docx".</h4>
+        <p>3 days</p>
 
-          <h4><u>Report a Problem</u></h4>
+        <h4><u>Report a Problem</u></h4>
+      </div>
+      <h2><u>COMPLETED</u></h2>
+      <div class="new-translation-container">
+        <div class="inside-box-text">
+          <h4>
+            Translation of your file "Ogrenci_belgesi.docx" is completed!
+          </h4>
+          <p>13 days ago</p>
         </div>
-        <h2><u>COMPLETED</u></h2>
-        <div class="new-translation-container">
-          <div class="inside-box-text">
-            <h4>
-              Translation of your file "Ogrenci_belgesi.docx" is completed!
-            </h4>
-            <p>13 days ago</p>
-          </div>
-          <div class="inside-box-buttons">
-            <a class="download-button" href="#">Download</a>
-            <div class="rate">
-              <span>Rate Translator</span>
-              <div id="rating_old1"></div>
-            </div>
+        <div class="inside-box-buttons">
+          <a class="download-button" href="#">Download</a>
+          <div class="rate">
+            <span>Rate Translator</span>
+            <div id="rating_old1"></div>
           </div>
         </div>
-        <div class="new-translation-container">
-          <div class="inside-box-text">
-            <h4>
-              Translation of your file "Ogrenci_belgesi.docx" is completed!
-            </h4>
-            <p>13 days ago</p>
-          </div>
-          <div class="inside-box-buttons">
-            <a class="download-button" href="#">Download</a>
-            <div class="rate">
-              <span>Rate Translator </span>
-              <div id="rating_old2"></div>
-            </div>
+      </div>
+      <div class="new-translation-container">
+        <div class="inside-box-text">
+          <h4>
+            Translation of your file "Ogrenci_belgesi.docx" is completed!
+          </h4>
+          <p>13 days ago</p>
+        </div>
+        <div class="inside-box-buttons">
+          <a class="download-button" href="#">Download</a>
+          <div class="rate">
+            <span>Rate Translator </span>
+            <div id="rating_old2"></div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Container ends-->
+  <!--Container ends-->
 
-    <!-- footer starts -->
-    <footer>
-      <div class="logo-and-footer">
-        <!-- footer logo -->
-        <div class="footer-logo">
-          <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
-          <p>All Rights Reserved © 2022</p>
-        </div>
+  <!-- footer starts -->
+  <footer>
+    <div class="logo-and-footer">
+      <!-- footer logo -->
+      <div class="footer-logo">
+        <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
+        <p>All Rights Reserved © 2022</p>
+      </div>
 
-        <!--Categories section-->
-        <div class="footer-links">
-          <ul>
-            <li>
-              <h5>CATEGORIES</h5>
-            </li>
-            <li><a href="find-translator.html">Find Translators</a></li>
-            <li><a href="become_translator.html">Become a Translator</a></li>
-            <li><a href="../">Features</a></li>
-          </ul>
-        </div>
+      <!--Categories section-->
+      <div class="footer-links">
+        <ul>
+          <li>
+            <h5>CATEGORIES</h5>
+          </li>
+          <li><a href="find-translator.html">Find Translators</a></li>
+          <li><a href="become_translator.html">Become a Translator</a></li>
+          <li><a href="../">Features</a></li>
+        </ul>
+      </div>
 
-        <!--Contact section-->
-        <div class="footer-links">
-          <ul>
-            <li>
-              <h5>CONTACT</h5>
-            </li>
-            <li><a href="about_us_page.html">About Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </div>
+      <!--Contact section-->
+      <div class="footer-links">
+        <ul>
+          <li>
+            <h5>CONTACT</h5>
+          </li>
+          <li><a href="about_us_page.html">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
 
-        <!--Follow Us section-->
-        <div class="follow-us">
-          <h5>FOLLOW US</h5>
-          <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
-          <div class="members">
-            <a href="https://github.com/Muqadasa-Sherani" target="blank"
-              >Muqadasa Sherani</a
-            >
+      <!--Follow Us section-->
+      <div class="follow-us">
+        <h5>FOLLOW US</h5>
+        <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
+        <div class="members">
+          <a href="https://github.com/Muqadasa-Sherani" target="blank">Muqadasa Sherani</a>
 
-            <a href="https://github.com/snnehir" target="blank"
-              >Sümeyye Nur Nehir
-            </a>
-          </div>
+          <a href="https://github.com/snnehir" target="blank">Sümeyye Nur Nehir
+          </a>
         </div>
       </div>
-    </footer>
-    <!-- footer ends -->
-  </body>
+    </div>
+  </footer>
+  <!-- footer ends -->
+</body>
+
 </html>

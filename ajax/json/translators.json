@@ -4,8 +4,8 @@
             "fullname": "Betsy Smith",
             "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?",
             "image": "../images/translators/betsy.jpg",
-            "price": 0.45,
-            "time": 13,
+            "price": 0.42,
+            "time": 15,
             "rating": 5,
             "languages": [
                 "English",
@@ -35,7 +35,6 @@
             "languages": [
                 "English",
                 "Pashto",
-                "Arabic",
                 "Spanish"
             ]
         },
@@ -43,7 +42,7 @@
             "fullname": "John Devi",
             "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit? Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "image": "../images/translators/john.jpg",
-            "price": 0.25,
+            "price": 0.15,
             "time": 12,
             "rating": 4,
             "languages": [
@@ -56,7 +55,7 @@
             "fullname": "Andrew Brown",
             "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?",
             "image": "../images/translators/andrew.jpg",
-            "price": 0.43,
+            "price": 0.35,
             "time": 10,
             "rating": 5,
             "languages": [
@@ -71,12 +70,65 @@
             "fullname": "Lia Huang",
             "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?",
             "image": "../images/translators/lia.jpg",
-            "price": 0.35,
-            "time": 20,
+            "price": 0.25,
+            "time": 13,
             "rating": 4,
             "languages": [
                 "English",
                 "Korean",
+                "Turkish"
+            ]
+        },
+        {
+            "fullname": "Jules Kim",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+            "image": "../images/translators/jules.jpg",
+            "price": 0.35,
+            "time": 11,
+            "rating": 4,
+            "languages": [
+                "English",
+                "Spanish",
+                "Korean"
+            ]
+        },
+        {
+            "fullname": "Emily Wilson",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?  Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+            "image": "../images/translators/emily.jpg",
+            "price": 0.22,
+            "time": 18,
+            "rating": 3,
+            "languages": [
+                "English",
+                "Spanish",
+                "Turkish"
+            ]
+        },
+        {
+            "fullname": "Wendy Morales",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?",
+            "image": "../images/translators/wendy.jpg",
+            "price": 0.25,
+            "time": 20,
+            "rating": 4,
+            "languages": [
+                "English",
+                "Arabic",
+                "Spanish"
+            ]
+        },
+        {
+            "fullname": "Joseph Miller",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt porro rem atque molestias! Pariatur atque, cupiditate vel, consequatur, aut modi ratione et totam blanditiis architecto sed suscipit corporis placeat eaque culpa a esse corrupti voluptas nesciunt nihil nemo velit?",
+            "image": "../images/translators/joseph.jpg",
+            "price": 0.24,
+            "time": 16,
+            "rating": 4,
+            "languages": [
+                "English",
+                "Arabic",
+                "Pashto",
                 "Turkish"
             ]
         }

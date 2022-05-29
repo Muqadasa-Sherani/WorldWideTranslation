@@ -30,11 +30,6 @@ function compute(){
         //my code
         date.innerHTML = " " + response.date;
         output_amount.value = response.rates[output_currency1] * input_amount.value;
-        /*!!!!!  an error is given when trying to ecnage from USD or TRy to EUR */
-        console.log("response.rates[output_currency1] = " + response.rates[output_currency1]);
-        console.log("input_amount.value =" + input_amount.value);
-        console.log("response.rates[output_currency1] * input_amount.value = "+response.rates[output_currency1] * input_amount.value);
-        console.log("----------------------------------------------------------------------------");
     }
 }
 

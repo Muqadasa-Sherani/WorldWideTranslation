@@ -14,7 +14,8 @@ $(document).ready(function () {
       dialog.dialog("open")
    })
    $("#send-btn-1").click(function () {
-      dialog.dialog("close")
+      dialog.dialog("close");
+      alert("Thank you for your feedback.");
    })
    // 2nd dialog
    var dialog2 = $("#dialog-form2").dialog({

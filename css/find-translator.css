@@ -77,7 +77,7 @@ select {
 }
 
 .currency select option{
-    background-color: blueviolet;
+    background-color: #efefef;
     color: #192c1e;
 }
 

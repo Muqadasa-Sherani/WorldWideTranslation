@@ -1,9 +1,0 @@
-Plugins: 
--Navbar highlight
--Hamburger menu
--Show more
-
-Widgets:
--Rating
--Input
--Dialog

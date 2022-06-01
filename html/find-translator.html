@@ -1,203 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Translator</title>
+    <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
+    <link rel="stylesheet" href="../css/nav_and_footer.css" />
+    <link rel="stylesheet" href="../css/find-translator.css" />
+    <link
+      rel="stylesheet"
+      href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.light.css"
+    />
+    <!-- jquery library -->
+    <script src="../jquery/jQuery.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Find Translator</title>
-  <link rel="shortcut icon" href="../images/wwt_logo_circle.ico" />
-  <link rel="stylesheet" href="../css/nav_and_footer.css" />
-  <link rel="stylesheet" href="../css/find-translator.css" />
-  <link rel="stylesheet" href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.light.css" />
-  <!-- jquery library -->
-  <script src="../jquery/jQuery.js"></script>
+    <!-- START: jquery widget -->
+    <link
+      rel="stylesheet"
+      href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css"
+      type="text/css"
+    />
+    <script src="../jquery/jqwidgets-ver14.0.0/scripts/jquery-1.11.1.min.js"></script>
+    <script src="../jquery/jqwidgets-ver14.0.0/scripts/demos.js"></script>
+    <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"></script>
+    <!-- star widget-->
+    <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxrating.js"></script>
+    <!-- END: star widget -->
 
-  <!-- START: jquery widget -->
-  <link rel="stylesheet" href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css" type="text/css" />
-  <script src="../jquery/jqwidgets-ver14.0.0/scripts/jquery-1.11.1.min.js"></script>
-  <script src="../jquery/jqwidgets-ver14.0.0/scripts/demos.js"></script>
-  <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"></script>
-  <!-- star widget-->
-  <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxrating.js"></script>
-  <!-- END: star widget -->
+    <!--javascript file for expandable paragraph jquery plugin-->
+    <script src="../js/find-translator.js"></script>
+    <script src="../ajax/translators.js"></script>
+    <!--javascript file for navagation bar for jquery plugin-->
+    <script src="../js/nav-bar.js"></script>
 
-  <!--javascript file for expandable paragraph jquery plugin-->
-  <script src="../js/find-translator.js"></script>
-  <script src="../ajax/translators.js"></script>
-  <!--javascript file for navagation bar for jquery plugin-->
-  <script src="../js/nav-bar.js"></script>
+    <!--icons, font awesome kit-->
+    <script
+      src="https://kit.fontawesome.com/f18ebfae9b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <!--icons, font awesome kit-->
-  <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-  <header>
-    <div class="navbar">
-      <div class="logo-and-nav">
-        <div class="burger-and-logo">
-          <!-- hamburger menu starts -->
-          <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <!-- hamburger menu ends -->
-          <!-- logo starts -->
-          <a class="logo" href="../">
-            <img class="logo-img" src="../images/wwt_logo_circle.png" alt="wwt-logo" />
-            <div class="logo-text">
-              <span>WWT</span><br />
-              <span>WORLD WIDE TRANSLATIONS</span>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo-and-nav">
+          <div class="burger-and-logo">
+            <!-- hamburger menu starts -->
+            <div class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-          </a>
-          <!-- logo ends -->
+            <!-- hamburger menu ends -->
+            <!-- logo starts -->
+            <a class="logo" href="../">
+              <img
+                class="logo-img"
+                src="../images/wwt_logo_circle.png"
+                alt="wwt-logo"
+              />
+              <div class="logo-text">
+                <span>WWT</span><br />
+                <span>WORLD WIDE TRANSLATIONS</span>
+              </div>
+            </a>
+            <!-- logo ends -->
+          </div>
+
+          <!-- navigation starts -->
+          <nav>
+            <ul class="nav-ul">
+              <li class="nav-link">
+                <a href="find-translator.html">Find Translators</a>
+              </li>
+              <li class="nav-link">
+                <a href="become_translator.html">Become a Translator</a>
+              </li>
+              <!-- my translation page cannot be accessed without login or signup -->
+              <li class="nav-link">
+                <a href="about_us_page.html">About Us</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- navigation ends -->
+        </div>
+        <div class="navbar-buttons">
+          <a id="signup" href="signup.html">Sign Up</a>
+          <a id="login" href="login.html">Login</a>
+        </div>
+      </div>
+    </header>
+    <!-- all contents of this page is in this container -->
+    <div class="container">
+      <!-- select area starts (user selects options to find translators) -->
+      <div class="select-area">
+        <!--the language filteration and search panel to the left corner-->
+        <div class="language-section">
+          <h3>Select the language you want to find a translator.</h3>
+          <form action="#">
+            <select class="select-lang from-lang">
+              <option value="English">English</option>
+              <option value="Turkish">Turkish</option>
+              <option value="Pashto">Pashto</option>
+              <option value="Arabic">Arabic</option>
+              <option value="Spanish">Spanish</option>
+              <option value="Korean">Korean</option>
+            </select>
+
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+            <select class="select-lang to-lang">
+              <option value="Turkish">Turkish</option>
+              <option value="English">English</option>
+              <option value="Pashto">Pashto</option>
+              <option value="Arabic">Arabic</option>
+              <option value="Spanish">Spanish</option>
+              <option value="Korean">Korean</option>
+            </select>
+
+            <select class="filter">
+              <option value="price-asc">Price (Ascending)</option>
+              <option value="rating">Rating</option>
+              <option value="time">Time</option>
+            </select>
+
+            <input id="search-btn" type="button" value="Search" />
+          </form>
+        </div>
+        <!--Exchange currency panel to the right corner-->
+        <div class="currency-exchange-section">
+          <h3>Currency Exchange Panel</h3>
+          <p class="date-view">Time Last updated: <span id="date"></span></p>
+          <div class="currency">
+            <input type="number" id="input-amount" value="0" />
+            <select name="" id="input-currency">
+              <option value="EUR" selected>Euro</option>
+              <option value="USD">United States Dollar</option>
+              <option value="TRY">Turkish Lira</option>
+            </select>
+          </div>
+          <div class="currency">
+            <input type="number" id="output-amount" placeholder="0" />
+            <select name="" id="output-currency">
+              <option value="EUR">Euro</option>
+              <option value="USD" selected>United States Dollar</option>
+              <option value="TRY">Turkish Lira</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- select area ends -->
+      <!-- result area starts (search results (proper translators) are displayed here)-->
+
+      <div class="result-area">
+        <!-- profiles -->
+      </div>
+      <!-- result area ends -->
+    </div>
+
+    <!-- footer starts -->
+    <footer>
+      <div class="logo-and-footer">
+        <!-- footer logo -->
+        <div class="footer-logo">
+          <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
+          <p>All Rights Reserved © 2022</p>
         </div>
 
-        <!-- navigation starts -->
-        <nav>
-          <ul class="nav-ul">
-            <li class="nav-link">
-              <a href="find-translator.html">Find Translators</a>
+        <!--Categories section-->
+        <div class="footer-links">
+          <ul>
+            <li>
+              <h5>CATEGORIES</h5>
             </li>
-            <li class="nav-link">
-              <a href="become_translator.html">Become a Translator</a>
-            </li>
-            <!-- my translation page cannot be accessed without login or signup -->
-            <li class="nav-link">
-              <a href="about_us_page.html">About Us</a>
-            </li>
+            <li><a href="find-translator.html">Find Translators</a></li>
+            <li><a href="become_translator.html">Become a Translator</a></li>
+            <li><a href="../">Features</a></li>
           </ul>
-        </nav>
-        <!-- navigation ends -->
-      </div>
-      <div class="navbar-buttons">
-        <a id="signup" href="signup.html">Sign Up</a>
-        <a id="login" href="login.html">Login</a>
-      </div>
-    </div>
-  </header>
-  <!-- all contents of this page is in this container -->
-  <div class="container">
-    <!-- select area starts (user selects options to find translators) -->
-    <div class="select-area">
-      <!--the language filteration and search panel to the left corner-->
-      <div class="language-section">
-        <h3>Select the language you want to find a translator.</h3>
-        <form action="#">
-          <select class="select-lang from-lang">
-            <option value="English">English</option>
-            <option value="Turkish">Turkish</option>
-            <option value="Pashto">Pashto</option>
-            <option value="Arabic">Arabic</option>
-            <option value="Spanish">Spanish</option>
-            <option value="Korean">Korean</option>
-          </select>
-
-          <i class="fa-solid fa-arrow-right-arrow-left"></i>
-
-          <select class="select-lang to-lang">
-            <option value="Turkish">Turkish</option>
-            <option value="English">English</option>
-            <option value="Pashto">Pashto</option>
-            <option value="Arabic">Arabic</option>
-            <option value="Spanish">Spanish</option>
-            <option value="Korean">Korean</option>
-          </select>
-
-          <select class="filter">
-            <option value="price-asc">Price (Ascending)</option>
-            <option value="rating">Rating</option>
-            <option value="time">Time</option>
-          </select>
-
-          <input id="search-btn" type="button" value="Search" />
-        </form>
-      </div>
-      <!--Exchange currency panel to the right corner-->
-      <div class="currency-exchange-section">
-        <p class="date-view">Time Last updated: <span id="date"></span></p>
-        <div class="currency">
-          <input type="number" id="input-amount" value="0" />
-          <select name="" id="input-currency">
-            <option value="EUR" selected>Euro</option>
-            <option value="USD">United States Dollar</option>
-            <option value="TRY">Turkish Lira</option>
-          </select>
         </div>
-        <div class="currency">
-          <input type="number" id="output-amount" placeholder="0" />
-          <select name="" id="output-currency">
-            <option value="EUR">Euro</option>
-            <option value="USD" selected>United States Dollar</option>
-            <option value="TRY">Turkish Lira</option>
-          </select>
+
+        <!--Contact section-->
+        <div class="footer-links">
+          <ul>
+            <li>
+              <h5>CONTACT</h5>
+            </li>
+            <li><a href="about_us_page.html">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+
+        <!--Follow Us section-->
+        <div class="follow-us">
+          <h5>FOLLOW US</h5>
+          <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
+          <div class="members">
+            <a href="https://github.com/Muqadasa-Sherani" target="blank"
+              >Muqadasa Sherani</a
+            >
+
+            <a href="https://github.com/snnehir" target="blank"
+              >Sümeyye Nur Nehir
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- select area ends -->
-    <!-- result area starts (search results (proper translators) are displayed here)-->
+    </footer>
+    <!-- footer ends -->
 
-    <div class="result-area">
-      <!-- profiles -->
-    </div>
-    <!-- result area ends -->
-  </div>
-
-  <!-- footer starts -->
-  <footer>
-    <div class="logo-and-footer">
-      <!-- footer logo -->
-      <div class="footer-logo">
-        <img src="../images/wwt_logo.png" alt="wwt-footer-logo" />
-        <p>All Rights Reserved © 2022</p>
-      </div>
-
-      <!--Categories section-->
-      <div class="footer-links">
-        <ul>
-          <li>
-            <h5>CATEGORIES</h5>
-          </li>
-          <li><a href="find-translator.html">Find Translators</a></li>
-          <li><a href="become_translator.html">Become a Translator</a></li>
-          <li><a href="../">Features</a></li>
-        </ul>
-      </div>
-
-      <!--Contact section-->
-      <div class="footer-links">
-        <ul>
-          <li>
-            <h5>CONTACT</h5>
-          </li>
-          <li><a href="about_us_page.html">About Us</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </div>
-
-      <!--Follow Us section-->
-      <div class="follow-us">
-        <h5>FOLLOW US</h5>
-        <a href="#"><i class="fa-brands fa-twitter-square fa-2xl"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube-square fa-2xl"></i></a>
-        <div class="members">
-          <a href="https://github.com/Muqadasa-Sherani" target="blank">Muqadasa Sherani</a>
-
-          <a href="https://github.com/snnehir" target="blank">Sümeyye Nur Nehir
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- footer ends -->
-
-  <!--javascript file for currency exchange panel at the right top corner-->
-  <script src="../ajax/currency-exchange.js"></script>
-</body>
-
+    <!--javascript file for currency exchange panel at the right top corner-->
+    <script src="../ajax/currency-exchange.js"></script>
+  </body>
 </html>

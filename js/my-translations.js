@@ -3,10 +3,11 @@ $(document).ready(function () {
    $("#rating_new").jqxRating({ width: 100, value: 0 });
    $("#rating_old1").jqxRating({ width: 100, value: 0 });
    $("#rating_old2").jqxRating({ width: 100, value: 4 });
+   // first dialog
    var dialog = $("#dialog-form").dialog({
       autoOpen: false,
       height: 300,
-      width: 300,
+      width: 315,
       modal: true,
    })
    $("#rate-btn-1").click(function () {
@@ -15,11 +16,11 @@ $(document).ready(function () {
    $("#send-btn-1").click(function () {
       dialog.dialog("close")
    })
-   // 2nd sample dialog
+   // 2nd dialog
    var dialog2 = $("#dialog-form2").dialog({
       autoOpen: false,
       height: 300,
-      width: 300,
+      width: 315,
       modal: true,
    })
    $("#rate-btn-2").click(function () {
@@ -28,11 +29,11 @@ $(document).ready(function () {
    $("#send-btn-2").click(function () {
       dialog2.dialog("close")
    })
-   // 3rd sample dialog
+   // 3rd dialog
    var dialog3 = $("#dialog-form3").dialog({
       autoOpen: false,
       height: 300,
-      width: 300,
+      width: 315,
       modal: true,
    })
    $("#rate-btn-3").click(function () {
@@ -41,6 +42,7 @@ $(document).ready(function () {
    $("#send-btn-3").click(function () {
       dialog3.dialog("close")
    })
+   // loading documents in transition
    $("footer").hide()
    const child_num = document.getElementById("translations").children.length
    $("#translations").children().each(function (index) {

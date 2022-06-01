@@ -73,8 +73,11 @@ h4{
   border-radius: 5px;
   margin-right: 20px;
 }
-.comment-dialog{
-  background-color: #d8f1eb !important;
+.comment-dialog, .ui-dialog-titlebar{
+  background-color: #def4ef !important;
+}
+.ui-dialog-titlebar{
+  color: #116466 !important;
 }
 .comment-dialog span{
   font-size: 12px;

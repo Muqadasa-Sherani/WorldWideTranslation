@@ -10,18 +10,23 @@
   <link rel="stylesheet" href="../css/nav_and_footer.css" />
   <link rel="stylesheet" href="../css/my_translation_style.css" />
 
-  <!--icons, font awesome kit-->
-  <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
-  <!-- jqueryy plugin -->
+  <link rel="stylesheet" href="../jquery/jquery-ui.css" />
   <script src="../jquery/jQuery.js"></script>
+  <script src="../jquery/jquery-ui.js"></script>
+
   <!-- START: star jquery widget -->
   <link rel="stylesheet" href="../jquery/jqwidgets-ver14.0.0/jqwidgets/styles/jqx.base.css" type="text/css" />
-  <script src="../jquery/jqwidgets-ver14.0.0/scripts/jquery-1.11.1.min.js"></script>
   <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxcore.js"></script>
   <script src="../jquery/jqwidgets-ver14.0.0/jqwidgets/jqxrating.js"></script>
   <!-- END: star widget -->
-  <script src="../js/nav-bar.js"></script>
+
+  <!--javascript file for expandable paragraph jquery plugin-->
   <script src="../js/my-translations.js"></script>
+  <!--javascript file for navagation bar for jquery plugin-->
+  <script src="../js/nav-bar.js"></script>
+
+  <!--icons, font awesome kit-->
+  <script src="https://kit.fontawesome.com/f18ebfae9b.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -93,13 +98,19 @@
           <h4>
             Translation of your file "Ogrenci_belgesi.docx" is completed!
           </h4>
-          <p>2 hours ago</p>
+          <p>2 hours ago <span class="dot"> ─ </span> Betsy Smith </p>
         </div>
         <div class="inside-box-buttons">
           <a class="download-button" href="#">Download</a>
-          <div class="rate">
-            <span>Rate Translator</span>
-            <div id="rating_new"></div>
+          <a href="#" id="rate-btn-1" class="rate">Rate Translator</a>
+
+          <div class="comment-dialog" id="dialog-form" title="Rate Translator">
+            <form autocomplete="off">
+              <div id="rating_new" class="stars"></div>
+              <a href="#" class="send-comment" id="send-btn-1">Send</a>
+              <textarea class="comment" cols="30" rows="5"></textarea>
+              <span>We care about your comments, please be kind when you give feedback.</span>
+            </form>
           </div>
         </div>
       </div>
@@ -122,28 +133,38 @@
           <h4>
             Translation of your file "Ogrenci_belgesi.docx" is completed!
           </h4>
-          <p>13 days ago</p>
+          <p>13 days ago ─ Andrew Brown</p>
         </div>
         <div class="inside-box-buttons">
           <a class="download-button" href="#">Download</a>
-          <div class="rate">
-            <span>Rate Translator</span>
-            <div id="rating_old1"></div>
+          <a href="#comment" id="rate-btn-2" class="rate">Rate Translator</a>
+          <div class="comment-dialog" id="dialog-form2" title="Rate Translator">
+            <form autocomplete="off">
+              <div id="rating_old1" class="stars"></div>
+              <a href="#" class="send-comment" id="send-btn-2">Send</a>
+              <textarea class="comment" cols="30" rows="5"></textarea>
+              <span>We care about your comments, please be kind when you give feedback.</span>
+            </form>
           </div>
         </div>
       </div>
       <div class="new-translation-container">
         <div class="inside-box-text">
           <h4>
-            Translation of your file "Ogrenci_belgesi.docx" is completed!
+            Translation of your file "Lorem.docx" is completed!
           </h4>
-          <p>13 days ago</p>
+          <p>13 days ago ─ Fiza Griffin</p>
         </div>
         <div class="inside-box-buttons">
           <a class="download-button" href="#">Download</a>
-          <div class="rate">
-            <span>Rate Translator </span>
-            <div id="rating_old2"></div>
+          <a href="#comment" id="rate-btn-3" class="rate">Rate Translator</a>
+          <div class="comment-dialog" id="dialog-form3" title="Rate Translator">
+            <form autocomplete="off">
+              <div id="rating_old2" class="stars"></div>
+              <a href="#" class="send-comment" id="send-btn-3">Send</a>
+              <textarea class="comment" cols="30" rows="5"></textarea>
+              <span>We care about your comments, please be kind when you give feedback.</span>
+            </form>
           </div>
         </div>
       </div>

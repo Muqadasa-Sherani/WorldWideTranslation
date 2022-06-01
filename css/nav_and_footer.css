@@ -35,7 +35,7 @@ a {
   /* separate items in flex direction (flex direction is row (x axis) intially) */
   align-items: center;
   /* center items vertically (cross axis: y) */
-  padding: 0px 22px;
+  padding: 1px 22px;
   background-color: white;
 }
 
@@ -86,6 +86,10 @@ nav ul li {
   margin: 0 12px;
 }
 
+nav a:hover {
+  color: #116466;
+}
+
 /* style both nav-links and signup link */
 nav a,
 #signup {
@@ -93,11 +97,6 @@ nav a,
   color: #383838;
 }
 
-/*nav a:hover{
-  color: #116466;
-  padding-bottom: 18px;
-  border-bottom: 4px solid #116466;
-}*/
 .nav-active {
   color: #116466;
   border-bottom: 4px solid #116466;
@@ -214,7 +213,9 @@ footer {
   nav a {
     color: white;
   }
-
+  nav a:hover {
+      color: white;
+  }
   nav li:hover {
     background-color: #127779;
   }

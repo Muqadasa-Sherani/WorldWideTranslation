@@ -3,7 +3,9 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
+p{
+  color: #757575;
+}
 /*Container starts*/
 .container {
   width: 80%;
@@ -15,12 +17,12 @@ body {
   margin-top: 80px;
 }
 
-
 /* RESPONSIVE */
 .picture-right {
   float: right;
   width: 30%;
-  padding: 20px 40px;
+  padding-top: 20px;
+  padding-left: 40px;
 }
 
 .paragraph-box1 {
@@ -39,15 +41,14 @@ span {
   position: relative;
   margin-top: 15%;
 }
-
+.paragraph-box2 p {
+  text-align: justify;
+  padding-right: 40px;
+}
 .picture-left {
   float: left;
   padding: 0 40px 20px 0;
   width: 30%;
-}
-
-.paragraph-box2 p {
-  text-align: justify;
 }
 
 /*container ends*/
@@ -57,12 +58,12 @@ span {
   width: 80%;
   margin: auto;
   margin-bottom: 5%;
-  margin-top: 7%;
+  margin-top: 10%;
 }
 
-/*.text-box-title{
+.input-section > h1{
   text-align: center;
-}*/
+}
 
 .email-button {
   display: flex;

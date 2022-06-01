@@ -29,7 +29,7 @@ function compute(){
         
         //my code
         date.innerHTML = " " + response.date;
-        output_amount.value = response.rates[output_currency1] * input_amount.value;
+        output_amount.value = (response.rates[output_currency1] * input_amount.value).toFixed(2);
     }
 }
 

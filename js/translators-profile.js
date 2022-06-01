@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    console.log(clicked_user_name)
     $("#resume").change(function() {
         filename = this.files[0].name;
         $("#selected-file").text(filename)

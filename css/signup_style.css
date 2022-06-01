@@ -13,7 +13,7 @@ body{
 
 .signup-info-section{
     width: 450px;
-    height: 580px;
+    height: 530px;
     background-color: #d1e8e2;
     border: 1px solid #d1e8e2;
     box-shadow: 4px 4px 2px #116466;
@@ -22,6 +22,7 @@ body{
 
 .title{
     text-align: center;
+    padding-top: 15px;
 }
 
 .google-account{
@@ -49,7 +50,7 @@ form{
     align-items: center;
     justify-content: center;
     color: gray;
-    margin-top: 5px;
+    padding-top: 15px;
 }
 
 .Button{
